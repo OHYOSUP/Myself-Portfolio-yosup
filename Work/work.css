@@ -33,7 +33,7 @@
 #root #bilboard > div:nth-child(1) {
   width: 70vw;
   height: 70vh;
-  background-image: url(bilboard.png);
+  background-image: url(group106.png);
   background-size: cover;
   display: flex;
   justify-content: center;
