@@ -27,20 +27,21 @@
 #bilboard{
   width: 100vw;
   height: 80vh;
-  background-color: #ccc;
 
   display: flex;
   justify-content: center;
   align-items: center;
   &>div:nth-child(1){
     width: 70vw;
-    height: 50vh;
-    border: 1px solid #fff;
-
+    height: 70vh;
+    // border: 1px solid #fff;
+    background-image: url(bilboard.png);
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+
     &>div:nth-child(1){
       width: 50vw;
       height: 30vh;
@@ -48,13 +49,30 @@
       display: flex;
       flex-direction: column;
       justify-content: space-around;
+      &>p{
+        color: #fff;
+        font-size: 1.5rem;
+        font-style: italic;
+        letter-spacing: 6px;
+      }
+      &>h1{
+        color: #fff;
+        &>span{
+          color: #E1B92A;
+          font-style: italic;
+        }
+      }
+      &>h2{
+        color: #fff;
+        font-size: 3.5rem;
+      }
     }
   }
 }
 
 #scroll{
   width: 150vw;
-  height: 80vh;
+  height: 70vh;
 
   display: flex;
   // justify-content: center;
@@ -71,9 +89,18 @@
     left: 25vw;
     &>div{
       width: 40vw;
-      height: 40vh;
+      height: 50vh;
       margin-right: 20px;
-      background-color: #777;
+      background-color: rgb(53, 53, 53);
+    }
+    &>div:nth-child(1){
+      background-image: url(pilgrimage.png);
+      background-size: cover;
+    }
+    &>div:nth-child(2){
+      background-image: url(2.png);
+      background-size: 55rem;
+
     }
   }
 
@@ -81,14 +108,14 @@
 }
 #nav{
   width: 100vw;
-  height: 5vh;
+  height: 1vh;
 
   display: flex;
   justify-content: center;
   align-items: center;
   &>div:nth-child(1){
     width: 15vw;
-    height: 5vh;
+    height: 1vh;
     display: flex;
     justify-content: space-around;
     align-items: center;

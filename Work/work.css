@@ -26,15 +26,15 @@
 #root #bilboard {
   width: 100vw;
   height: 80vh;
-  background-color: #ccc;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 #root #bilboard > div:nth-child(1) {
   width: 70vw;
-  height: 50vh;
-  border: 1px solid #fff;
+  height: 70vh;
+  background-image: url(bilboard.png);
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,9 +47,26 @@
   flex-direction: column;
   justify-content: space-around;
 }
+#root #bilboard > div:nth-child(1) > div:nth-child(1) > p {
+  color: #fff;
+  font-size: 1.5rem;
+  font-style: italic;
+  letter-spacing: 6px;
+}
+#root #bilboard > div:nth-child(1) > div:nth-child(1) > h1 {
+  color: #fff;
+}
+#root #bilboard > div:nth-child(1) > div:nth-child(1) > h1 > span {
+  color: #E1B92A;
+  font-style: italic;
+}
+#root #bilboard > div:nth-child(1) > div:nth-child(1) > h2 {
+  color: #fff;
+  font-size: 3.5rem;
+}
 #root #scroll {
   width: 150vw;
-  height: 80vh;
+  height: 70vh;
   display: flex;
   align-items: center;
 }
@@ -64,20 +81,28 @@
 }
 #root #scroll > div:nth-child(1) > div {
   width: 40vw;
-  height: 40vh;
+  height: 50vh;
   margin-right: 20px;
-  background-color: #777;
+  background-color: rgb(53, 53, 53);
+}
+#root #scroll > div:nth-child(1) > div:nth-child(1) {
+  background-image: url(pilgrimage.png);
+  background-size: cover;
+}
+#root #scroll > div:nth-child(1) > div:nth-child(2) {
+  background-image: url(2.png);
+  background-size: 55rem;
 }
 #root #nav {
   width: 100vw;
-  height: 5vh;
+  height: 1vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 #root #nav > div:nth-child(1) {
   width: 15vw;
-  height: 5vh;
+  height: 1vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
