@@ -65,7 +65,7 @@
   font-size: 3.5rem;
 }
 #root #scroll {
-  width: 150vw;
+  width: 100vw;
   height: 70vh;
   display: flex;
   align-items: center;

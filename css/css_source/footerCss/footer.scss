@@ -1,0 +1,43 @@
+#footer{
+  width: 100vw;
+  height: 25vh;
+  border: 1px solid #fff;
+
+  display: flex;
+  
+  &>div:nth-child(1){
+    width: 18vw;
+    height: 25vh;
+    color: #fff;
+    border-right: 1px solid #fff;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-left: 2vw;
+    &>h1{
+      font-size: 3rem;
+    }
+    &>p{
+      width: 15vw;
+      height: 25vh;
+      text-align: left;
+      line-height: 20px;
+    }
+  }
+
+  &>div:nth-child(2){
+    width: 80vw;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    // background-color: #ccc;
+    &>div{
+      width: 25vw;
+      height: 25vh;
+      background-color: #ccc;
+      margin-left: 10px;
+    }
+  }
+}
