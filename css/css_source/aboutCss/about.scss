@@ -16,9 +16,11 @@
 
   #about_sectionOne{
     width: 100vw;
+    display: flex;
     #left{
       width: 50vw;
-      background-color: #ccc;
+      // height: 90vh;s
+      border-right: 1px solid #fff;
       &>div:nth-child(1){
         width: 50vw;
         height: 90vh;
@@ -63,4 +65,56 @@
       }
     }
   }
+// left
+
+#right{
+  width: 50vw;
+  display: flex;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+&>div:nth-child(1){
+  width: 50vw;
+  height: 55vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  #screen{
+    width: 30vw;
+    height: 30vh;
+    background-color: #fff;
+  }
+}
+  &>div:nth-child(2){
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFF3A0;
+    &>h3{
+    height: 10vh;
+    font-size: 3rem;
+    color: #FF6C34;
+    }
+    &>p{
+      width: 30vw;
+      height: 30vh;
+      line-height: 50px;
+    }
+  }
+
+  &>div:nth-child(3){
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &>div{
+      width: 20vw;
+      height: 50vh;
+      background-color: #ccc;
+    }
+  }
+}
 }

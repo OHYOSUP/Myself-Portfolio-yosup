@@ -13,10 +13,11 @@
 }
 #about #about_sectionOne {
   width: 100vw;
+  display: flex;
 }
 #about #about_sectionOne #left {
   width: 50vw;
-  background-color: #ccc;
+  border-right: 1px solid #fff;
 }
 #about #about_sectionOne #left > div:nth-child(1) {
   width: 50vw;
@@ -52,4 +53,53 @@
   width: 50vw;
   height: 10vh;
   border: 1px solid #fff;
+}
+#about #right {
+  width: 50vw;
+  display: flex;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+#about #right > div:nth-child(1) {
+  width: 50vw;
+  height: 55vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#about #right > div:nth-child(1) #screen {
+  width: 30vw;
+  height: 30vh;
+  background-color: #fff;
+}
+#about #right > div:nth-child(2) {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #FFF3A0;
+}
+#about #right > div:nth-child(2) > h3 {
+  height: 10vh;
+  font-size: 3rem;
+  color: #FF6C34;
+}
+#about #right > div:nth-child(2) > p {
+  width: 30vw;
+  height: 30vh;
+  line-height: 50px;
+}
+#about #right > div:nth-child(3) {
+  width: 50vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#about #right > div:nth-child(3) > div {
+  width: 20vw;
+  height: 50vh;
+  background-color: #ccc;
 }/*# sourceMappingURL=about.css.map */
