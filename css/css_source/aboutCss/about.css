@@ -18,6 +18,9 @@
 #about #about_sectionOne #left {
   width: 50vw;
   border-right: 1px solid #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 #about #about_sectionOne #left > div:nth-child(1) {
   width: 50vw;
@@ -70,7 +73,7 @@
 }
 #about #right > div:nth-child(1) #screen {
   width: 30vw;
-  height: 30vh;
+  height: 40vh;
   background-color: #fff;
 }
 #about #right > div:nth-child(2) {
