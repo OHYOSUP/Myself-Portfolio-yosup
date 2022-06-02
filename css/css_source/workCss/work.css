@@ -98,16 +98,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 #filgrimage_page > div:nth-child(1) > div > h5 {
-  font-size: 5rem;
-  height: 20vh;
+  font-size: 4rem;
+  height: 13vh;
 }
 #filgrimage_page > div:nth-child(1) > div > p {
   width: 20vw;
   text-align: center;
-  line-height: 50px;
+  line-height: 30px;
 }
 #filgrimage_page > div:nth-child(2) {
   width: 77vw;
@@ -155,13 +155,10 @@
   width: 33vw;
 }
 #filgrimage_page > div:nth-child(2) #rightPage > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > p:nth-child(1) {
-  font-size: 4rem;
+  font-size: 2rem;
   height: 10vh;
   display: flex;
   align-items: center;
-}
-#filgrimage_page > div:nth-child(2) #rightPage > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > p:nth-child(2) {
-  font-size: 1.5rem;
 }
 #filgrimage_page > div:nth-child(2) #rightPage > div:nth-child(2) {
   width: 38.5vw;
@@ -174,17 +171,13 @@
 #filgrimage_page > div:nth-child(2) #rightPage > div:nth-child(2) > div:nth-child(1) {
   width: 35vw;
   height: 20vh;
-  font-size: 2rem;
 }
 #filgrimage_page > div:nth-child(2) #rightPage > div:nth-child(2) > div:nth-child(1) > p:nth-child(1) {
   width: 35vw;
   height: 10vh;
   display: flex;
   align-items: center;
-  font-size: 4rem;
-}
-#filgrimage_page > div:nth-child(2) #rightPage > div:nth-child(2) > div:nth-child(1) > p:nth-child(2) {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 #filgrimage_page > div:nth-child(2) #rightPage > div:nth-child(2) > div:nth-child(2) {
   width: 33vw;
@@ -248,7 +241,7 @@
   font-size: 1.3rem;
 }
 #hanbok_main > div:nth-child(1) > div > h5 {
-  font-size: 5rem;
+  font-size: 4rem;
   height: 20vh;
 }
 #hanbok_main > div:nth-child(1) > div > p {
@@ -262,7 +255,7 @@
   background-color: #ccc;
 }
 #hanbok_main > div:nth-child(2) > ul {
-  width: 55vw;
+  width: 65vw;
   height: 15vh;
   display: flex;
   justify-content: space-around;
@@ -302,13 +295,10 @@
   width: 33vw;
 }
 #hanbok_main > div:nth-child(2) #hanbok_rightPage > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > p:nth-child(1) {
-  font-size: 4rem;
+  font-size: 2rem;
   height: 10vh;
   display: flex;
   align-items: center;
-}
-#hanbok_main > div:nth-child(2) #hanbok_rightPage > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > p:nth-child(2) {
-  font-size: 1.5rem;
 }
 #hanbok_main > div:nth-child(2) #hanbok_rightPage > div:nth-child(2) {
   width: 38.5vw;
@@ -321,21 +311,17 @@
 #hanbok_main > div:nth-child(2) #hanbok_rightPage > div:nth-child(2) > div:nth-child(1) {
   width: 35vw;
   height: 20vh;
-  font-size: 2rem;
 }
 #hanbok_main > div:nth-child(2) #hanbok_rightPage > div:nth-child(2) > div:nth-child(1) > p:nth-child(1) {
   width: 35vw;
   height: 10vh;
   display: flex;
   align-items: center;
-  font-size: 4rem;
-}
-#hanbok_main > div:nth-child(2) #hanbok_rightPage > div:nth-child(2) > div:nth-child(1) > p:nth-child(2) {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 #hanbok_main > div:nth-child(2) #hanbok_rightPage > div:nth-child(2) > div:nth-child(2) {
-  width: 33vw;
-  height: 45vh;
-  background-image: url(hanbok_screen2.png);
-  background-size: cover;
+  width: 30vw;
+  height: 35vh;
+  background-color: rgb(92, 92, 92);
+  background-size: 45rem;
 }/*# sourceMappingURL=work.css.map */
