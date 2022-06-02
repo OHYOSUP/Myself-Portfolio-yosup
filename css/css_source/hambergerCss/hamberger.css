@@ -4,25 +4,27 @@
   border-bottom: 1px solid #fff;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
-#hamberger > ul {
+#hamberger #list {
   width: 50vw;
   height: 15vh;
   list-style-type: none;
   display: flex;
   justify-content: space-around;
+  align-items: center;
   color: #fff;
   font-size: 2rem;
 }
-#hamberger > ul > div {
-  width: 5vw;
+#hamberger #icon {
+  width: 8vw;
   height: 5vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
 }
-#hamberger > ul > div > div {
+#hamberger #icon > div {
   width: 5vw;
   height: 0.3vh;
   background-color: #fff;
