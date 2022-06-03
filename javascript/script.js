@@ -1,69 +1,62 @@
-const hamberger = document.getElementById('hamberger');
-const icon = document.getElementById('icon');
-const lines = document.querySelectorAll('#icon>div');
-const list = document.getElementById('list');
-const items = document.querySelectorAll('#list>li');
-
-
-// console.log(lines);
-
-const line = Array.from(lines);
-
-// console.log(Array.isArray(line));
+import { iconFunction } from "./javascript_source/hamberger.js";
 
 
 
 
-list.style.display = 'none';
 
 
 
 
-icon.addEventListener('mouseover', ()=>{
-line[0].style.backgroundColor = 'red'
-line[1].style.backgroundColor = 'red'
-line[2].style.backgroundColor = 'red'
+
+const landingPage = document.getElementById('landing')
+const centerBox = document.getElementById('backdropBox');
+
+console.log(window.scrollY);
+
+// console.log(maxPosition);
+
+
+
+let posY = landing.getBoundingClientRect().top;
+
+let nowPosition = window.scrollY;
+let nextPage = main.offsetHeight
+
+console.log(posY);
+
+
+function boxEvent (elems){
+elems.style.opacity = 0;
+elems.style.width = '90vw';
+elems.style.transition = '0.5s';
+};
+
+
+
+function scrollEvent(elems){
+window.scrollTo({top: 1214, left : 0, behavior : 'smooth'});
+};
+
+window.addEventListener('wheel', (e)=>{
+
+  if(e.deltaY === 100){
+  boxEvent(centerBox);
+  scrollEvent(landingPage);
+  
+  // window.scrollTo({top: 1214, left : 0, behavior : 'smooth'});
+  }
 });
 
 
-// function iconEvent(transition){
-//   icon.addEventListener('mouseover', ()=>{
-//     line[0].style.backgroundColor = 'red'
-//     line[1].style.backgroundColor = 'red'
-//     line[2].style.backgroundColor = 'red'
-//     });
-//     icon.addEventListener('click', ()=>{
-//       line[0].style.position = 'absolute';
-//       line[0].style.top = '4vh';
-//       line[0].style.transition = transition;
-//       line[1].style.position = 'absolute';
-//       line[1].style.top = '4vh';
-//       line[1].style.transition = transition;
-//       line[2].style.position = 'absolute';
-//       line[2].style.top = '4vh';
-//       line[2].style.transition = transition;
 
-//       list.style.display = 'flex';
-//     });
+
+// let test = setInterval(function(){
+//   if(i < maxPosition){
+//   i ++;
+// window.scrollY[i];
+
+// }if(i === 1080){
+//   clearInterval(test);
 // }
-
-function iconEvent(){
-  icon.addEventListener('mouseover', ()=>{
-    line.forEach(elems=>{
-      elems.style.backgroundColor = 'red';
-    })
-    });
-    icon.addEventListener('click', ()=>{
-      line.forEach(function(elems){
-        elems.style.position = 'absolute';
-        elems.style.top = '4vh';
-        elems.style.transition = '0.5s';
-      });
-
-      list.style.display = 'flex';
-    });
-}
-
-
-
-iconEvent(icon)
+// console.log(i);
+// },0.001)

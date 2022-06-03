@@ -1,0 +1,32 @@
+#landing {
+  width: 100vw;
+  height: 110vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(#131423, #131423, #131423, #131423, #383733, #45433D, #9D955E);
+}
+#landing #backdropBox {
+  width: 80vw;
+  height: 80vh;
+  background-color: rgb(255, 255, 255);
+  opacity: 0.2;
+  border-radius: 20px;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  display: flex;
+  filter: drop-shadow(0 5vh 20px 20px rgb(34, 34, 34));
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#landing #backdropBox > p:nth-child(1) {
+  height: 15vh;
+  font-size: 4rem;
+  font-weight: 1000;
+}
+#landing #backdropBox > p:nth-child(2) {
+  width: 50vw;
+  font-size: 1rem;
+  text-align: center;
+}/*# sourceMappingURL=landing.css.map */

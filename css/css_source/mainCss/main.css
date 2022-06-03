@@ -1,8 +1,8 @@
 #main {
   width: 100vw;
-  height: 60vh;
+  height: 100vh;
+  background: linear-gradient(#9D955E, #9D955E, #383733, #45433D, #131423, #131423, #131423, #131423);
   border-bottom: 1px solid #fff;
-  border-top: 1px solid #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
