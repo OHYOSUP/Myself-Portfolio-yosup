@@ -25,7 +25,7 @@ elems.style.transition = '0.5s';
 
 
 function scrollEvent(elems){
-window.scrollTo({top: 1214, left : 0, behavior : 'smooth'});
+window.scrollBy(0, nowPosition + nextPage);
 };
 
 export const scroll = window.addEventListener('wheel', (e)=>{
@@ -33,7 +33,9 @@ export const scroll = window.addEventListener('wheel', (e)=>{
   if(e.deltaY === 100){
   boxEvent(centerBox);
   scrollEvent(landingPage);
-
   }
 });
+
+
+
 
