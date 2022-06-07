@@ -20,15 +20,15 @@
 
     
 
-    root.style.backgroundColor = '#ccc';
+    // root.style.backgroundColor = '#ccc';
     root.style.display = 'flex';
     root.style.justifyContent = 'center';
     root.style.alignItems = 'center';
     box.style.width = '25vw';
     box.style.height = '25vw';
     box.style.borderRadius = '50%';
-    box.style.backgroundColor = 'rgba(142,142,142,0.2)';
-    box.style.mixBlendMode - 'transparent';
+    // box.style.backgroundColor = 'yellow';
+    // box.style.mixBlendMode - 'transparent';
     box.style.position = 'absolute';
     box.style.left = 0;
     box.style.top = 0;
@@ -37,13 +37,27 @@
 
 
 
-    window.addEventListener('mousemove', (event)=>{
+    let colors = ["#F0DA31", "#F01886", "#F01372"];
+
+
+    function colorChange(){
+      let c1 = colors[Math.floor(Math.random()*colors.length)];
+      let c2 = colors[Math.floor(Math.random()*colors.length)];
+
+      box.style.background = `linear-gradient(90deg, ${c1}, ${c2})`;
+
+    }
+
+
+    export const nightLight = window.addEventListener('mousemove', (event)=>{
       let mouseX = event.clientX;
       let mouseY = event.clientY;
-      console.log(mouseX);
+      // console.log(mouseX);
 
       box.style.left = innerWidth - mouseX + 'px';
       box.style.top = innerHeight - mouseY + 'px';
+
+      colorChange(box);
     });
   </script>
 </body>

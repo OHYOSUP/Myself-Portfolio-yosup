@@ -15,12 +15,12 @@ let nowPosition = window.scrollY;
 let documentHeight = document.body.offsetHeight
 
 
-console.log(nowPosition);
+// console.log(nowPosition);
 // 현재 스크롤의 위치
 
-console.log(posY);
+// console.log(posY);
 // 현재 스크롤의 위치(음수값)
-console.log(documentHeight);
+// console.log(documentHeight);
 // 문서 전체의 높이
 
 
@@ -37,8 +37,12 @@ function boxEventTwo (elems){
   elems.style.transition = '0.5s';
   };
 
+// console.log(landingPage.offsetHeight);
+let nextPage = landingPage.offsetHeight;
+
+
 function scrollEvent(elems){
-window.scrollBy({left : 0, top : 1466, behavior : 'smooth'});
+window.scrollBy({left : 0, top : nextPage, behavior : 'smooth'});
 };
 
 function scrollEventUp(elems){
@@ -46,21 +50,18 @@ function scrollEventUp(elems){
   };
 
 
-
 export const scroll = landingPage.addEventListener('wheel', (e)=>{
 
+  let isStatus = false;
   if(e.deltaY === 100){
   boxEvent(centerBox);
   scrollEvent(landingPage);
+  isStatus = true;
   }
   if(e.deltaY === -100){
     boxEventTwo(centerBox);
     scrollEventUp(centerBox);
+    isStatus = false;
   }
 });
-
-
-
-
-
 

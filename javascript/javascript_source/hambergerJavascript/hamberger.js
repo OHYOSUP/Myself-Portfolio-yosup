@@ -11,13 +11,15 @@
 
   icon.style.position = 'relative';
   list.style.display = 'none';
+
+  
   let isStatus = true;
 
 
 export const iconFunction = function iconEvent(){
   icon.addEventListener('mouseover', ()=>{
     line.forEach(elems=>{
-      elems.style.backgroundColor = 'red';
+      elems.style.backgroundColor = '#FA520D';
       elems.style.transition = '0.5s';
       // elems.style.position = 'relative';
     })

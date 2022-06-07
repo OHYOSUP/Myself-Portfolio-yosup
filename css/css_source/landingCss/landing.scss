@@ -11,6 +11,7 @@
   width: 80vw;
   height: 80vh;
   background-color: rgb(255, 255, 255);
+  // color: #fff;
   opacity: 0.2;
   border-radius: 20px;
   // background-color: #fff;
@@ -33,5 +34,8 @@
     text-align: center;
     // font-weight: 1000;
   }
+}
+#box{
+  mix-blend-mode: difference;
 }
 }
