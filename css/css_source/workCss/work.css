@@ -1,4 +1,3 @@
-@charset "UTF-8";
 #work {
   width: 100vw;
   height: 100vh;
@@ -35,87 +34,80 @@
   font-size: 3rem;
 }
 
-#work_pageTwo {
+#filgrimage_pageOne {
   width: 100vw;
+  height: 100vh;
   display: flex;
-  z-index: 0;
+  flex-direction: column;
 }
-#work_pageTwo > div {
+#filgrimage_pageOne > div:nth-child(1) {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+#filgrimage_pageOne > div:nth-child(1) > div {
   width: 16.6vw;
   height: 100vh;
   background-size: cover;
 }
-#work_pageTwo > div:nth-child(1) {
-  background-image: url(이주영.png);
+#filgrimage_pageOne > div:nth-child(1) > div:nth-child(1) {
+  background-image: url(/Image/leejoo.svg);
 }
-#work_pageTwo > div:nth-child(2) {
-  background-image: url(변요한.png);
+#filgrimage_pageOne > div:nth-child(1) > div:nth-child(2) {
+  background-image: url(/Image/byun.svg);
 }
-#work_pageTwo > div:nth-child(3) {
-  background-image: url(이민지.png);
+#filgrimage_pageOne > div:nth-child(1) > div:nth-child(3) {
+  background-image: url(/Image/leemin.svg);
 }
-#work_pageTwo > div:nth-child(4) {
-  background-image: url(구교환.png);
+#filgrimage_pageOne > div:nth-child(1) > div:nth-child(4) {
+  background-image: url(/Image/gugyo.svg);
 }
-#work_pageTwo > div:nth-child(5) {
-  background-image: url(전여빈.png);
+#filgrimage_pageOne > div:nth-child(1) > div:nth-child(5) {
+  background-image: url(/Image/jeonteo.svg);
 }
-#work_pageTwo > div:nth-child(6) {
-  background-image: url(엄태구.png);
-}
-#work_pageTwo > div:nth-child(7) {
-  width: 25vw;
-  height: 90vh;
-  display: flex;
-  flex-direction: column;
-  font-size: 5rem;
-  font-weight: 800;
-  justify-content: flex-end;
-  align-items: center;
-  position: absolute;
-  z-index: 1;
-  color: #fff;
+#filgrimage_pageOne > div:nth-child(1) > div:nth-child(6) {
+  background-image: url(/Image/untae.svg);
 }
 
-#filgrimage_page {
+#filgrimage_pageTwo {
   width: 100vw;
   height: 100vh;
-  background-image: url(actors.png);
+  background-image: url(/Image/actors.svg);
   background-size: cover;
   display: flex;
 }
-#filgrimage_page > div:nth-child(1) {
+#filgrimage_pageTwo > div:nth-child(1) {
   width: 23vw;
   height: 100vh;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   color: #fff;
+  position: -webkit-sticky;
+  position: sticky;
 }
-#filgrimage_page > div:nth-child(1) > div {
+#filgrimage_pageTwo > div:nth-child(1) > div {
   width: 23vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 1rem;
 }
-#filgrimage_page > div:nth-child(1) > div > h5 {
+#filgrimage_pageTwo > div:nth-child(1) > div > h5 {
   font-size: 4rem;
-  height: 13vh;
+  height: 20vh;
 }
-#filgrimage_page > div:nth-child(1) > div > p {
+#filgrimage_pageTwo > div:nth-child(1) > div > p {
   width: 20vw;
   text-align: center;
-  line-height: 30px;
+  line-height: 50px;
 }
-#filgrimage_page > div:nth-child(2) {
+#filgrimage_pageTwo > div:nth-child(2) {
   width: 77vw;
-  height: 100vh;
   background-color: #ccc;
 }
-#filgrimage_page > div:nth-child(2) > ul {
-  width: 55vw;
+#filgrimage_pageTwo > div:nth-child(2) > ul {
+  width: 65vw;
   height: 15vh;
   display: flex;
   justify-content: space-around;
@@ -123,67 +115,77 @@
   font-size: 4.5rem;
   color: rgb(165, 165, 165);
 }
-#filgrimage_page > div:nth-child(2) > ul > li:nth-child(1) {
+#filgrimage_pageTwo > div:nth-child(2) > ul > li:nth-child(1) {
   color: #000;
 }
-#filgrimage_page > div:nth-child(2) #rightPage {
+#filgrimage_pageTwo > div:nth-child(2) #rightPage {
   width: 77vw;
   height: 85vh;
+  background-color: #ccc;
   display: flex;
+  overflow: scroll;
 }
-#filgrimage_page > div:nth-child(2) #rightPage > div:nth-child(1) {
+#filgrimage_pageTwo > div:nth-child(2) #rightPage > div:nth-child(1) {
   width: 38.5vw;
-  height: 85vh;
   border-right: 1px solid #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-#filgrimage_page > div:nth-child(2) #rightPage > div:nth-child(1) > div:nth-child(1) {
-  width: 33vw;
-  height: 45vh;
-  background-image: url(screen1.png);
+#filgrimage_pageTwo > div:nth-child(2) #rightPage > div:nth-child(1) > div:nth-child(1) {
+  width: 30vw;
+  height: 40vh;
+  background-image: url(/Image/screen1.svg);
   background-size: cover;
 }
-#filgrimage_page > div:nth-child(2) #rightPage > div:nth-child(1) > div:nth-child(2) {
+#filgrimage_pageTwo > div:nth-child(2) #rightPage > div:nth-child(1) > div:nth-child(2) {
   width: 33vw;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
-#filgrimage_page > div:nth-child(2) #rightPage > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) {
+#filgrimage_pageTwo > div:nth-child(2) #rightPage > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) {
   width: 33vw;
 }
-#filgrimage_page > div:nth-child(2) #rightPage > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > p:nth-child(1) {
+#filgrimage_pageTwo > div:nth-child(2) #rightPage > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > p:nth-child(1) {
   font-size: 2rem;
   height: 10vh;
   display: flex;
   align-items: center;
 }
-#filgrimage_page > div:nth-child(2) #rightPage > div:nth-child(2) {
+#filgrimage_pageTwo > div:nth-child(2) #rightPage > div:nth-child(2) {
   width: 38.5vw;
   height: 85vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+  overflow-y: auto;
 }
-#filgrimage_page > div:nth-child(2) #rightPage > div:nth-child(2) > div:nth-child(1) {
+#filgrimage_pageTwo > div:nth-child(2) #rightPage > div:nth-child(2) > div:nth-child(1) {
   width: 35vw;
-  height: 20vh;
+  height: 10vh;
 }
-#filgrimage_page > div:nth-child(2) #rightPage > div:nth-child(2) > div:nth-child(1) > p:nth-child(1) {
+#filgrimage_pageTwo > div:nth-child(2) #rightPage > div:nth-child(2) > div:nth-child(1) > p:nth-child(1) {
   width: 35vw;
   height: 10vh;
   display: flex;
   align-items: center;
   font-size: 2rem;
 }
-#filgrimage_page > div:nth-child(2) #rightPage > div:nth-child(2) > div:nth-child(2) {
-  width: 33vw;
-  height: 45vh;
-  background-image: url(screen2.png);
-  background-size: cover;
+#filgrimage_pageTwo > div:nth-child(2) #rightPage > div:nth-child(2) > div:nth-child(2) {
+  width: 35vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#filgrimage_pageTwo > div:nth-child(2) #rightPage > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) {
+  width: 30vw;
+  height: 40vh;
+  background-image: url(/Image/screen2.svg);
+  background-size: 45rem;
 }
 
 #hanbokPage {

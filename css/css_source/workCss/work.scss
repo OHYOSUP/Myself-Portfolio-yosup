@@ -37,53 +37,51 @@
     font-size: 3rem;
   }
 }
-#work_pageTwo{
+
+
+// page1
+
+#filgrimage_pageOne{
   width: 100vw;
+  height: 100vh;
   display: flex;
-  z-index: 0;
+  flex-direction: column;
+  // z-index: 0;
+  &>div:nth-child(1){
+    width: 100vw;
+    height: 100vh;
+    display: flex;
     &>div{
       width: 16.6vw;
       height: 100vh;
       background-size: cover;
-    }
+  }
+
     &>div:nth-child(1){
-      background-image: url(이주영.png);
+      background-image: url(/Image/leejoo.svg);
     }
     &>div:nth-child(2){
-      background-image: url(변요한.png);
-    }    &>div:nth-child(3){
-      background-image: url(이민지.png);
-    }    &>div:nth-child(4){
-      background-image: url(구교환.png);
-    }    &>div:nth-child(5){
-      background-image: url(전여빈.png);
-    }    &>div:nth-child(6){
-      background-image: url(엄태구.png);
+      background-image: url(/Image/byun.svg);
     }
-
-    &>div:nth-child(7){
-      width: 25vw;
-      height: 90vh;
-      // background-color: #ccc;
-      display: flex;
-      flex-direction: column;
-      font-size: 5rem;
-      font-weight: 800;
-      justify-content: flex-end;
-      align-items: center;
-      position: absolute;
-      
-
-      z-index: 1;
-      // bottom: 10vh;
-
-      color: #fff;
-    } 
+    &>div:nth-child(3){
+      background-image: url(/Image/leemin.svg);
+    }
+    &>div:nth-child(4){
+      background-image: url(/Image/gugyo.svg);
+    }
+    &>div:nth-child(5){
+      background-image: url(/Image/jeonteo.svg);
+    }
+    &>div:nth-child(6){
+      background-image: url(/Image/untae.svg);
+    }
 }
-#filgrimage_page{
+}
+
+#filgrimage_pageTwo{
   width: 100vw;
   height: 100vh;
-  background-image: url(actors.png);
+  background-image: url(/Image/actors.svg);
   background-size: cover;
 
   display: flex;
@@ -92,7 +90,9 @@
   height: 100vh;
   backdrop-filter: blur(10px);
   color: #fff;
-
+  position: sticky;
+  // left: 0;
+  // bottom: 20vh;
   &>div{
     width: 23vw;
     height: 100vh;
@@ -100,26 +100,26 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 1rem;
+    // font-size: 1.3rem;
     &>h5{
       font-size: 4rem;
-      height: 13vh;
+      height: 20vh;
     }
     &>p{
       width: 20vw;
       text-align: center;
-      line-height: 30px;
+      line-height: 50px;
     }
   }
 }
 // left
 &>div:nth-child(2){
   width: 77vw;
-  height: 100vh;
+  // height: 100vh;
   background-color: #ccc;
 
   &>ul{
-    width: 55vw;
+    width: 65vw;
     height: 15vh;
     display: flex;
     justify-content: space-around;
@@ -136,11 +136,13 @@
 #rightPage{
   width: 77vw;
   height: 85vh;
+  background-color: #ccc;
   display: flex;
+  overflow: scroll;
 
   &>div:nth-child(1){
     width: 38.5vw;
-    height: 85vh;
+    // height: 85vh;
     border-right: 1px solid #fff;
     display: flex;
     flex-direction: column;
@@ -148,11 +150,14 @@
     // justify-content: space-around;
 
     &>div:nth-child(1){
-      width: 33vw;
-      height: 45vh;
-      background-image: url(screen1.png);
+      width: 30vw;
+      height: 40vh;
+      background-image: url(/Image/screen1.svg);
       background-size: cover;
     }
+
+
+
     &>div:nth-child(2){
       width: 33vw;
       flex-direction: column;
@@ -168,9 +173,12 @@
           display: flex;
           align-items: center;
         }
-        
+
       }
+
     }
+
+
 
   }
   &>div:nth-child(2){
@@ -180,10 +188,12 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
+    overflow-y: auto;
+
+
     &>div:nth-child(1){
       width: 35vw;
-      height: 20vh;
-      // font-size: 2rem;
+      height: 10vh;
 
       &>p:nth-child(1){
         width: 35vw;
@@ -191,25 +201,30 @@
         display: flex;
         align-items: center;
         font-size: 2rem;
+
       }
       
     }
     &>div:nth-child(2){
-      width: 33vw;
-      height: 45vh;
-      background-image: url(screen2.png);
-      background-size: cover;
+      width: 35vw;
+      height: 50vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      &>div:nth-child(1){
+        width: 30vw;
+        height: 40vh;
+        background-image: url(/Image/screen2.svg);
+        background-size: 45rem;
+      }
     }
+
   }
 }
 }
+
 }
-
-// page1
-
-
-
-
 
 #hanbokPage{
   width: 100vw;
@@ -334,11 +349,10 @@
           display: flex;
           align-items: center;
         }
-
       }
     }
-
   }
+  
   &>div:nth-child(2){
     width: 38.5vw;
     height: 85vh;
