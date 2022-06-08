@@ -31,5 +31,6 @@
   text-align: center;
 }
 #landing #box {
-  mix-blend-mode: difference;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
 }/*# sourceMappingURL=landing.css.map */

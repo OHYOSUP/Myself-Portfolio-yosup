@@ -19,22 +19,23 @@
     display: flex;
     #left{
       width: 50vw;
-      // height: 90vh;s
+      // height: 90vh;
       border-right: 1px solid #fff;
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
+      align-items: center;
       &>div:nth-child(1){
         width: 50vw;
-        height: 90vh;
+        height: 50vh;
 
         display: flex;
         justify-content: center;
         align-items: center;
         &>div:nth-child(1){
-          width: 45vw;
-          height: 60vh;
-          background-color: #fff;
+          width: 15vw;
+          height: 38vh;
+          // background-color: #fff;
         }
       }
 
@@ -45,7 +46,7 @@
           width: 50vw;
           height: 10vh;
           // border-top: 1px solid #fff;
-          border: 1px solid #fff;
+          // border: 1px solid #fff;
           // border-right: 1px solid #fff;
           // margin-left: 20px;
 
@@ -99,7 +100,7 @@
   #screen{
     width: 30vw;
     height: 40vh;
-    background-color: #fff;
+    background-image: url(/Image/making.svg);
   }
 }
   &>div:nth-child(2){
@@ -109,6 +110,7 @@
     justify-content: center;
     align-items: center;
     color: #FFF3A0;
+    text-align: center;
     &>h3{
     height: 10vh;
     font-size: 3rem;
@@ -120,20 +122,6 @@
       line-height: 50px;
     }
   }
-
-  &>div:nth-child(3){
-    width: 50vw;
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    &>div{
-      width: 20vw;
-      height: 50vh;
-      background-color: #ccc;
-    }
-  }
 }
 // about page
-
 }

@@ -41,11 +41,11 @@ function boxEventTwo (elems){
 let nextPage = landingPage.offsetHeight;
 
 
-function scrollEvent(elems){
+function scrollEvent(){
 window.scrollBy({left : 0, top : nextPage, behavior : 'smooth'});
 };
 
-function scrollEventUp(elems){
+function scrollEventUp(){
   window.scrollBy({left : 0, top : -(documentHeight+posY), behavior : 'smooth'});
   };
 

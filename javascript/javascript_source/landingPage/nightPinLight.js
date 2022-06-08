@@ -64,6 +64,7 @@ export const colorChange = (colorA, colorB, colorC, colorD, elems) => {
   let c2 = colors[Math.floor(Math.random()*colors.length)];
 
   elems.style.background = `linear-gradient(To right, ${c1}, ${c2})`;
+  elems.style.boxShadow = `20px 40px 100px ${c2}`
   elems.style.width = '20vw';
   elems.style.height = '20vw';
   elems.style.borderRadius = '50%';
@@ -73,6 +74,7 @@ export const colorChange = (colorA, colorB, colorC, colorD, elems) => {
   elems.style.transform = 'translate(-50%, -50%)';  
   elems.style.zIndex = '10';
   elems.style.opacity = '0.3';
+  
 }
 
 
@@ -86,6 +88,21 @@ export const colorChange = (colorA, colorB, colorC, colorD, elems) => {
 
 //   colorChange(box);
 // });
+const pinLight = document.getElementById('box');
+
+
+
+
+// export const boxShadow = (parentTarget, childrenTarget, eventType) => {
+//   box.addEventListener(eventType, (event) => {
+
+//     let xPos = event.clientX;
+//     let yPos = event.clientY;
+//     childrenTarget.style.left = `${parentTarget.innerWidth - xPos}px`;
+//     childrenTarget.style.top = `${parentTarget.innerHeight - yPos}px`;
+
+//   });
+// };
 
 
 export const lightEffect = (parentTarget, childrenTarget, eventType) => {
@@ -94,5 +111,12 @@ export const lightEffect = (parentTarget, childrenTarget, eventType) => {
     let yPos = event.clientY;
     childrenTarget.style.left = `${parentTarget.innerWidth - xPos}px`;
     childrenTarget.style.top = `${parentTarget.innerHeight - yPos}px`;
+
+
+    
   });
 }
+
+
+
+
