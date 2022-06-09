@@ -29,15 +29,12 @@ function boxEvent (elems){
 elems.style.opacity = 0;
 elems.style.width = '90vw';
 elems.style.transition = '0.5s';
-
 };
 
 function boxEventTwo (elems){
   elems.style.opacity = 0.2;
   elems.style.width = '80vw';
   elems.style.transition = '0.5s';
-  
-
   };
 
 // console.log(landingPage.offsetHeight);
