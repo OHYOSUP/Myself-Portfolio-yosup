@@ -1,13 +1,14 @@
 #landing {
-  width: 100vw;
-  height: 110vh;
+  width: 150vw;
+  height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background: linear-gradient(#131423, #131423, #131423, #131423, #383733, #45433D, #9D955E);
 }
 #landing #backdropBox {
-  width: 80vw;
+  width: 150vw;
   height: 80vh;
   background-image: url(/Image/background.svg);
   opacity: 0.2;
@@ -17,26 +18,29 @@
   justify-content: center;
   align-items: center;
 }
-#landing #backdropBox > p:nth-child(1) {
-  height: 15vh;
-  font-size: 4rem;
-  font-weight: 1000;
-  color: rgb(255, 255, 255);
-  position: absolute;
-  bottom: 35vh;
-  z-index: 4;
-}
-#landing #backdropBox > p:nth-child(2) {
-  width: 50vw;
-  font-size: 1rem;
-  text-align: center;
-  mix-blend-mode: difference;
-  position: absolute;
-  bottom: 30vh;
-  z-index: 2;
-  color: rgb(255, 255, 255);
-}
 #landing #box {
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
+}
+
+#textbox {
+  position: absolute;
+  bottom: 25vh;
+  left: 10vw;
+}
+#textbox > p:nth-child(1) {
+  height: 15vh;
+  font-size: 8rem;
+  font-weight: 1000;
+  color: rgb(255, 255, 255);
+  z-index: 4;
+  mix-blend-mode: difference;
+}
+#textbox > p:nth-child(2) {
+  width: 50vw;
+  font-size: 1rem;
+  text-align: left;
+  mix-blend-mode: difference;
+  z-index: 2;
+  color: rgb(255, 255, 255);
 }/*# sourceMappingURL=landing.css.map */

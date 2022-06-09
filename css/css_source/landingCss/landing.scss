@@ -1,15 +1,16 @@
 #landing{
-  width: 100vw;
-  height: 110vh;
+  width: 150vw;
+  height: 100vh;
 
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background: linear-gradient(#131423, #131423, #131423,#131423, #383733, #45433D, #9D955E);
   
   
 #backdropBox{
-  width: 80vw;
+  width: 150vw;
   height: 80vh;
   // background: linear-gradient(#ffffff, #c2c1ba);
   background-image: url(/Image/background.svg);
@@ -25,31 +26,39 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  &>p:nth-child(1){
-    height: 15vh;
-    font-size: 4rem;
-    font-weight: 1000;
-    color: rgba(255, 255, 255);
-    position: absolute;
-    bottom: 35vh;
-    z-index: 4;
-    // mix-blend-mode: difference;
-  }
-  &>p:nth-child(2){
-    width: 50vw;
-    font-size: 1rem;
-    text-align: center;
-    mix-blend-mode: difference;
-    position: absolute;
-    bottom: 30vh;
-
-    z-index: 2;
-    color: rgb(255, 255, 255);
-
-    // font-weight: 1000;
-  }
 }
 #box{
   backdrop-filter: blur(10px);
 }
+}
+
+
+
+
+#textbox{
+position: absolute;
+bottom: 25vh;
+left: 10vw;
+  &>p:nth-child(1){
+    height: 15vh;
+    font-size: 8rem;
+    font-weight: 1000;
+    color: rgba(255, 255, 255);
+    // position: absolute;
+
+    z-index: 4;
+    mix-blend-mode: difference;
+  }
+  &>p:nth-child(2){
+    width: 50vw;
+    font-size: 1rem;
+    text-align: left;
+    mix-blend-mode: difference;
+    // position: absolute;
+
+    z-index: 2;
+    color: rgb(255, 255, 255);
+  
+    // font-weight: 1000;
+  }
 }
