@@ -16,9 +16,8 @@ import { addElem } from "./javascript_source/mainJavascript/main.js";
 const root = document.getElementById('root');
 const main = document.getElementById('main');
 addElem('scroll', main);
-
-const textTwo = document.getElementsByClassName('textTwo');
-import { imageEvent } from "./javascript_source/aboutJavascript/about.js";
+// const textTwo = document.getElementsByClassName('textTwo');
+// import { imageEvent } from "./javascript_source/aboutJavascript/about.js";
 
 
 

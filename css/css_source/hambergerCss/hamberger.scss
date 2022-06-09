@@ -8,6 +8,8 @@
   align-items: center;
   position: fixed;
   z-index: 11;
+  mix-blend-mode: difference;
+
   #list{
     width: 50vw;
     height: 15vh;
@@ -19,9 +21,7 @@
     // align-items: center;
     color: rgb(255, 255, 255);
     font-weight: 1000;
-    font-size: 2rem;
-
-    mix-blend-mode: difference;
+    font-size: 3rem;
 
   }
   #icon{

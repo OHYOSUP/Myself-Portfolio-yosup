@@ -9,13 +9,10 @@
 #landing #backdropBox {
   width: 80vw;
   height: 80vh;
-  background-color: rgb(255, 255, 255);
+  background-image: url(/Image/background.svg);
   opacity: 0.2;
   border-radius: 20px;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
   display: flex;
-  filter: drop-shadow(0 5vh 20px 20px rgb(34, 34, 34));
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -24,11 +21,20 @@
   height: 15vh;
   font-size: 4rem;
   font-weight: 1000;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  bottom: 35vh;
+  z-index: 4;
 }
 #landing #backdropBox > p:nth-child(2) {
   width: 50vw;
   font-size: 1rem;
   text-align: center;
+  mix-blend-mode: difference;
+  position: absolute;
+  bottom: 30vh;
+  z-index: 2;
+  color: rgb(255, 255, 255);
 }
 #landing #box {
   -webkit-backdrop-filter: blur(10px);

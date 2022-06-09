@@ -1,11 +1,11 @@
 
 #work{
   width: 100vw;
-  height: 100vh;
+  height: 70vh;
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  // justify-content: center;
   align-items: center;
 
   #title{
@@ -152,7 +152,7 @@
     &>div:nth-child(1){
       width: 30vw;
       height: 40vh;
-      background-image: url(/Image/screen1.svg);
+      // background-image: url(/Image/screen1.svg);
       background-size: cover;
     }
 
@@ -183,7 +183,7 @@
   }
   &>div:nth-child(2){
     width: 38.5vw;
-    height: 85vh;
+    // height: 85vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -193,7 +193,7 @@
 
     &>div:nth-child(1){
       width: 35vw;
-      height: 10vh;
+      height: 20vh;
 
       &>p:nth-child(1){
         width: 35vw;
@@ -206,8 +206,8 @@
       
     }
     &>div:nth-child(2){
-      width: 35vw;
-      height: 50vh;
+      width: 30vw;
+      // height: 40vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -215,8 +215,7 @@
       &>div:nth-child(1){
         width: 30vw;
         height: 40vh;
-        background-image: url(/Image/screen2.svg);
-        background-size: 45rem;
+        background-size: cover;
       }
     }
 
@@ -264,7 +263,7 @@
 #hanbok_main{
   width: 100vw;
   height: 100vh;
-  background-image: url(hanbok_main.png);
+  background-image: url(/Image/hanbokmain.svg);
   background-size: cover;
 
   display: flex;
@@ -331,7 +330,7 @@
     &>div:nth-child(1){
       width: 33vw;
       height: 45vh;
-      background-image: url(hanbok_screen1.png);
+      // background-image: url(hanbok_screen1.png);
       background-size: 65rem;
     }
     &>div:nth-child(2){
