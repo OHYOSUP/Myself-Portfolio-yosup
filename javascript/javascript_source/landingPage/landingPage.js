@@ -19,47 +19,12 @@ function boxEventTwo (elems){
   elems.style.transition = '0.5s';
   };
 
-// console.log(landingPage.offsetHeight);
-
-let posY = landingPage.getBoundingClientRect().top;
+let posY = landing.getBoundingClientRect().top;
 
 let nowPosition = window.scrollY;
 let documentHeight = document.body.offsetHeight
 let nextPage = landingPage.offsetHeight;
-console.log(posY);
-console.log(nextPage);
 
-
-
-
-
-// let isStatus = true;
-
-export const scroll = function scrollEvent(elems){
-elems.addEventListener('wheel', (event)=>{
-event.preventDefault();
-
-
-if(event.deltaY === 100){
-
-for(let i = 0; i < 500; i++){
-  backdropBox.scrollBy({left : i, top : 0, behavior : 'smooth'});
-// event.unbind('wheel', false);
-  // isStatus = false;
-  // console.log(event);
-  console.log(elems.left);
-}
-
-if(event.deltaY === -100){
-  i--;
-  console.log(i);
-  
-}
-}
-
-});
-
-};
 
 
 
@@ -67,6 +32,19 @@ if(event.deltaY === -100){
 function scrollEventUp(elems){
   elems.scrollBy({left : -1920, top : -(documentHeight+posY), behavior : 'smooth'});
   };
+
+
+// let isStatus = true;
+
+export const scroll = function scrollEvent(elems){
+
+elems.addEventListener('wheel', (event)=>{
+event.preventDefault();
+
+
+});
+};
+
 
 
 

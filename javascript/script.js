@@ -1,5 +1,6 @@
 import { iconFunction } from "./javascript_source/hambergerJavascript/hamberger.js";
-import { scroll } from "./javascript_source/landingPage/landingPage.js";
+// import { scroll } from "./javascript_source/landingPage/landingPage.js";
+import { scrollEvent } from "./javascript_source/landingPage/scrollEvent.js";
 
 // import { imageEvent } from "./javascript_source/aboutJavascript/about.js";
 

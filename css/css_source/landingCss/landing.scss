@@ -1,5 +1,5 @@
 #landing{
-  width: 150vw;
+  width: 100vw;
   height: 100vh;
 
   display: flex;
@@ -7,26 +7,20 @@
   justify-content: center;
   align-items: center;
   background: linear-gradient(#131423, #131423, #131423,#131423, #383733, #45433D, #9D955E);
-  
+  overflow: hidden;
   
 #backdropBox{
-  width: 150vw;
+  width: 100vw;
   height: 80vh;
-  // background: linear-gradient(#ffffff, #c2c1ba);
-  background-image: url(/Image/background.svg);
   background-size: cover;
-  // color: #fff;
   opacity: 0.2;
   border-radius: 20px;
-  // background-color: #fff;
-  // backdrop-filter: blur(10px);
   display: flex;
-  // filter: drop-shadow(0 5vh 20px 20px rgb(34, 34, 34));
-  // z-index: 1;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+  overflow: hidden;
+
 }
 #box{
   backdrop-filter: blur(10px);
@@ -43,6 +37,8 @@
   justify-content: center;
   z-index: 2;
   mix-blend-mode: difference;
+  overflow: hidden;
+
 
   &>p:nth-child(1){
     height: 15vh;

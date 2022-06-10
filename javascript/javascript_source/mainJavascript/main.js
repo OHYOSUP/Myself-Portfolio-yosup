@@ -16,7 +16,7 @@ const one = document.getElementById('lightGroupOne')
 // let landingPageHeight = landingPage.offsetHeight;
 
 
-console.log(window.pageYOffset);
+// console.log(window.pageYOffset);
 
 
 export const addElem = (eventType, parentTarget) => window.addEventListener(eventType, (event)=>{

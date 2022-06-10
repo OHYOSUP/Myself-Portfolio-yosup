@@ -1,46 +1,24 @@
-const landing = document.getElementById('landing');
-const backdropBox = document.getElementById('backdropBox');
-const textBox = document.getElementById('textBox');
 
 
+// landing.style.width = '150vw';
+// landing.style.height = '200vh';
+// landing.style.backgroundColor = '#666';
+// landing.style.display = 'flex';
+// landing.style.justifyContent = 'center';
+// // landing.style.alignItems = 'center';
+
+// backdropBox.style.width = '150vw';
+// backdropBox.style.height = '80vh';
+// backdropBox.style.backgroundColor = '#222';
+// backdropBox.style.opacity = 0;
 
 
-landing.style.width = '150vw';
-landing.style.height = '200vh';
-landing.style.backgroundColor = '#666';
-landing.style.display = 'flex';
-landing.style.justifyContent = 'center';
-// landing.style.alignItems = 'center';
+// textBox.style.width = '50vw';
+// textBox.style.height = '50vh';
+// textBox.style.fontSize = '3rem';
+// textBox.style.position = 'absolute';
+// textBox.style.backgroundColor = '#ccc';
 
-backdropBox.style.width = '150vw';
-backdropBox.style.height = '80vh';
-backdropBox.style.backgroundColor = '#222';
-backdropBox.style.opacity = 0;
-
-
-textBox.style.width = '50vw';
-textBox.style.height = '50vh';
-textBox.style.fontSize = '3rem';
-textBox.style.position = 'absolute';
-textBox.style.backgroundColor = '#ccc';
-
-
-
-function moveRight(elems){
-  scrollBy({left : 1920, top : 0, behavior : 'smooth'});
-  elems.style.opacity = 0.2;
-  elems.style.transition = '0.5s';
-}
-
-function moveLeft(elems){
-  scrollBy({left : -1920, top : 0, behavior : 'smooth'});
-  elems.style.opacity = 0;
-  elems.style.transition = '0.5s';
-}
-
-
-function addOpacity(elems){
-  elems.style.opacity = 0.5;
 
 
 //   let nextPage = document.createElement('div');
@@ -55,7 +33,7 @@ function addOpacity(elems){
 // console.log(nextPage);
 
 
-}
+
 
 
 // function eventMove(e) {
@@ -70,53 +48,61 @@ function addOpacity(elems){
     
 //   }
 // }
+const landing = document.getElementById('landing');
+const backdropBox = document.getElementById('backdropBox');
+const textBox = document.getElementById('textBox');
 
-console.log(window.pageYOffset);
 
-function nextPage(elems){
-  elems.scrollBy({left : 0, top : 713, behavior : 'smooth'});
+backdropBox.style.position = 'absolute';
+backdropBox.style.left = 0;
+backdropBox.style.opacity = 0;
+
+
+root.style.overflowX = 'hidden';
+// console.log(window.pageYOffset);
+
+
+function moveRight(elems){
+
+  elems.scrollBy({left : 1920, top : 0, behavior : 'smooth'});
+  elems.style.opacity = 0.2;
+  elems.style.transition = '0.5s';
 }
 
 
+function moveLeft(elems){
+
+
+  elems.scrollBy({left : -1920, top : 0, behavior : 'smooth'});
+  elems.style.opacity = 0;
+  elems.style.transition = '0.5s';
+}
+
+console.log(backdropBox.pageXOffset);
+
+
+
 function nextPage(elems){
-  elems.scrollBy({left : 0, top : 713, behavior : 'smooth'});
+  elems.scrollBy({left : 0, top : 1356, behavior : 'smooth'});
 }
 
 
-landing.addEventListener('wheel',(e)=>{
 
 
-  e.preventDefault();
+export const scrollTwo = landing.addEventListener('wheel', (e)=>{
+  e.preventDefault()
+
   if(e.deltaY === 100){
-    
-    addOpacity(backdropBox);
-
-    setTimeout(function(){
-      nextPage(window);
-    },2000);
-
+    moveRight(window);
+    // setTimeout(function(){
+    //   nextPage(window)
+    // },2000)
+  }if(e.deltaY === -100){
+    moveLeft(backdropBox);
   }
-  if(e.deltaY === -100){
-    
-    isStatus = false;
+// nextPage(window);
 
-    // removeEventListener(eventMove);
-
-    console.log(isStatus);
-    // console.log(backdropBox.scrollWidth);
-    // console.log(currentX);
-  }
-}
+});
 
 
-
-
-    
-  
-
-  
-  // eventMove(landing);
-  
-
-
-// landing.addEventListener('wheel', eventMove))
+console.log()
