@@ -39,24 +39,65 @@ function moveLeft(elems){
 }
 
 
+function addOpacity(elems){
+  elems.style.opacity = 0.5;
 
-let isStatus = false;
-let currentX = window.scrollX;
+
+//   let nextPage = document.createElement('div');
+//   backdropBox.appendChild(nextPage);
+
+// nextPage.style.width = '5vw';
+// nextPage.style.height = '5vw';
+// nextPage.style.backgroundColor = '#000';
+// nextPage.style.position = 'absolute';
+// nextPage.style.right = '10vw';
+// nextPage.style.top = '50vh';
+// console.log(nextPage);
 
 
-function eventMove(e) {
+}
+
+
+// function eventMove(e) {
+//   e.preventDefault();
+//   if(e.deltaY === 100){
+//     moveRight(backdropBox);
+//     addOpacityDiv(backdropBox);
+
+//   }
+//   if(e.deltaY === -100){
+//     moveLeft(backdropBox);
+    
+//   }
+// }
+
+console.log(window.pageYOffset);
+
+function nextPage(elems){
+  elems.scrollBy({left : 0, top : 713, behavior : 'smooth'});
+}
+
+
+function nextPage(elems){
+  elems.scrollBy({left : 0, top : 713, behavior : 'smooth'});
+}
+
+
+landing.addEventListener('wheel',(e)=>{
+
+
   e.preventDefault();
   if(e.deltaY === 100){
-    moveRight(backdropBox);
-    isStatus = true;
+    
+    addOpacity(backdropBox);
 
-    console.log(isStatus);
-    removeEventListener(eventMove);
-    // console.log(currentX);
+    setTimeout(function(){
+      nextPage(window);
+    },2000);
 
   }
   if(e.deltaY === -100){
-    moveLeft(backdropBox);
+    
     isStatus = false;
 
     // removeEventListener(eventMove);
@@ -69,9 +110,13 @@ function eventMove(e) {
 
 
 
-landing.addEventListener('wheel', eventMove);
+
+    
+  
+
+  
+  // eventMove(landing);
   
 
 
-
-
+// landing.addEventListener('wheel', eventMove))

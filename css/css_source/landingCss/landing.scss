@@ -1,6 +1,6 @@
 #landing{
-  width: 100vw;
-  height: 110vh;
+  width: 150vw;
+  height: 100vh;
 
   display: flex;
   flex-direction: column;
@@ -10,7 +10,7 @@
   
   
 #backdropBox{
-  width: 80vw;
+  width: 150vw;
   height: 80vh;
   // background: linear-gradient(#ffffff, #c2c1ba);
   background-image: url(/Image/background.svg);
@@ -36,6 +36,8 @@
   width: 80vw;
   height: 50vh;
   position: absolute;
+  left: 10vw;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -48,7 +50,6 @@
     font-weight: 1000;
     color: rgba(255, 255, 255,1);
     
-    // bottom: 35vh;
     
   }
   &>p:nth-child(2){
@@ -59,7 +60,6 @@
     line-height: 60px;
     // bottom: 30vh;
     color: rgb(255, 255, 255);
-
     // font-weight: 1000;
   }
 }

@@ -1,6 +1,6 @@
 #landing {
-  width: 100vw;
-  height: 110vh;
+  width: 150vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,7 +8,7 @@
   background: linear-gradient(#131423, #131423, #131423, #131423, #383733, #45433D, #9D955E);
 }
 #landing #backdropBox {
-  width: 80vw;
+  width: 150vw;
   height: 80vh;
   background-image: url(/Image/background.svg);
   background-size: cover;
@@ -27,6 +27,7 @@
   width: 80vw;
   height: 50vh;
   position: absolute;
+  left: 10vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
