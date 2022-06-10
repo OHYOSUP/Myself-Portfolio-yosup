@@ -27,8 +27,6 @@ export const colorChange = (colorA, colorB, colorC, colorD, elems) => {
   
 }
 
-
-
 const pinLight = document.getElementById('box');
 
 
@@ -42,8 +40,6 @@ export const lightEffect = (parentTarget, childrenTarget, eventType) => {
     childrenTarget.style.left = `${parentTarget.innerWidth - xPos}px`;
     childrenTarget.style.top = `${parentTarget.innerHeight - yPos}px`;
 
-
-    
   });
 }
 
