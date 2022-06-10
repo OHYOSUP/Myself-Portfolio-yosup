@@ -2,6 +2,7 @@
   width: 100vw;
   height: 110vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background: linear-gradient(#131423, #131423, #131423, #131423, #383733, #45433D, #9D955E);
@@ -22,7 +23,7 @@
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
 }
-#landing #textbox {
+#landing #textBox {
   width: 80vw;
   height: 50vh;
   position: absolute;
@@ -32,13 +33,13 @@
   z-index: 2;
   mix-blend-mode: difference;
 }
-#landing #textbox > p:nth-child(1) {
+#landing #textBox > p:nth-child(1) {
   height: 15vh;
   font-size: 6rem;
   font-weight: 1000;
   color: rgb(255, 255, 255);
 }
-#landing #textbox > p:nth-child(2) {
+#landing #textBox > p:nth-child(2) {
   width: 50vw;
   font-size: 2rem;
   text-align: left;

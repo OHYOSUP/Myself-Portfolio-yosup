@@ -281,7 +281,7 @@ justify-content: space-around;
   &>div:nth-child(2){
     width: 65vw;
     height: 52vh;
-    background-color: #222222;
+    background-color: #000;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -294,17 +294,20 @@ justify-content: space-around;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      position: absolute;
+
       &>h1{
         font-size: 7rem;
         letter-spacing: 20px;
         color: #FF6C34;
+      z-index: 3;
         
-        z-index: 2;
       }
       &>p{
         margin-top: 5vh;
         font-size: 2rem;
-        z-index: 2;
+      z-index: 3;
+        
       }
     }
   }
@@ -312,7 +315,7 @@ justify-content: space-around;
   width: 65vw;
   height: 50vh;
   position: absolute;
-  z-index: 0;
+  z-index: 2;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -341,7 +344,7 @@ justify-content: space-around;
     justify-content: space-around;
     align-items: center;
     position: absolute;
-    z-index: 2;
+    
   
     &>hr{
       border: 3;

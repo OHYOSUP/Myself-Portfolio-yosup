@@ -3,6 +3,7 @@
   height: 110vh;
 
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background: linear-gradient(#131423, #131423, #131423,#131423, #383733, #45433D, #9D955E);
@@ -31,7 +32,7 @@
   backdrop-filter: blur(10px);
 }
 
-#textbox{
+#textBox{
   width: 80vw;
   height: 50vh;
   position: absolute;
