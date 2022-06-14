@@ -29,6 +29,8 @@ let char = 0;
 
 let timer = setInterval(fade,50)
 
+
+
 function fade(){
   const span = titleText.querySelectorAll('span')[char];
   span.classList.add('fade');
@@ -43,6 +45,7 @@ function complete(){
   clearInterval(timer);
   timer = null;
 }
+
 
 
 

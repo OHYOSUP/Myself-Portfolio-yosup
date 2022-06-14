@@ -1,5 +1,8 @@
 
 *{margin: 0; padding: 0; box-sizing: border-box;}
+
+
+
 #work{
   width: 100vw;
   height: 100vh;
@@ -77,6 +80,17 @@
     &>div:nth-child(6){
       background-image: url(/Image/untae.svg);
     }
+
+}
+span{
+  opacity: 0;
+}
+
+span.fade{
+  opacity: 1;
+  transition: 0.7s ease;
+  transform: translateX(50px);
+  color: #BA3737;
 }
 }
 

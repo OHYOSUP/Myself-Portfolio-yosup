@@ -1,4 +1,4 @@
-import { iconFunction } from "./javascript_source/hambergerJavascript/hamberger.js";
+// import { iconFunction } from "./javascript_source/hambergerJavascript/hamberger.js";
 // import { scroll } from "./javascript_source/landingPage/landingPage.js";
 import { scrollEvent } from "./javascript_source/landingPage/scrollEvent.js";
 
@@ -21,7 +21,11 @@ addElem('scroll', main);
 // const textTwo = document.getElementsByClassName('textTwo');
 // import { imageEvent } from "./javascript_source/aboutJavascript/about.js";
 
+import { scrollMoving } from "./javascript_source/workJavascipt/filgrimage_pageTwotest.js";
 
 
 
+import { navEvent, navEventSecond} from "./javascript_source/workJavascipt/filgrimage_pageTwotest-navigation.js";
+navEvent('mouseover')
+navEventSecond('mouseout')
 

@@ -74,6 +74,15 @@
 #filgrimage_pageOne > div:nth-child(1) > div:nth-child(6) {
   background-image: url(/Image/untae.svg);
 }
+#filgrimage_pageOne span {
+  opacity: 0;
+}
+#filgrimage_pageOne span.fade {
+  opacity: 1;
+  transition: 0.7s ease;
+  transform: translateX(50px);
+  color: #BA3737;
+}
 
 #filgrimage_pageTwo {
   width: 100vw;

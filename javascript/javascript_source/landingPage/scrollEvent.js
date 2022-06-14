@@ -3,7 +3,7 @@ const landingPage = document.getElementById('landing')
 const backdropBox = document.getElementById('backdropBox');
 const textBox = document.getElementById('textbox');
 const img = document.querySelector('.img');
-console.log(img);
+// console.log(img);
 
 img.style.width = '150vw';
 img.style.height = '150vh';
@@ -11,7 +11,7 @@ img.style.position = 'absolute'
 
 
 backdropBox.style.position = 'absolute';
-console.log(backdropBox);
+// console.log(backdropBox);
 
 
 // function totheright (elems){
@@ -63,12 +63,12 @@ i++;
   requestAnimationFrame(totheLeft);
   img.style.transform = `translateX(${-i}px)`;
 
-  console.log(i);
+  // console.log(i);
 
   if(i >= 689){
     img.style.opacity = 0;
     img.style.transition = '1s';
-    console.log(i);
+    // console.log(i);
 
   }
 }
