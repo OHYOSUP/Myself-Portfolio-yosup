@@ -16,7 +16,7 @@ const one = document.getElementById('lightGroupOne')
 // let landingPageHeight = landingPage.offsetHeight;
 
 
-console.log(window.pageYOffset);
+// console.log(window.pageYOffset);
 
 
 export const addElem = (eventType, parentTarget) => window.addEventListener(eventType, (event)=>{
@@ -28,12 +28,18 @@ export const addElem = (eventType, parentTarget) => window.addEventListener(even
     parentTarget.appendChild(adjustmentBox);
 
     // console.log(adjustmentBox);
-    adjustmentBox.style.width = '80vw';
-    adjustmentBox.style.height = '80vh';
-    adjustmentBox.style.backgroundColor = '#ccc';
+    adjustmentBox.style.width = '50vw';
+    adjustmentBox.style.height = '50vw';
+    adjustmentBox.style.backgroundColor = 'rgba(255,255,255,0.1)';
+    adjustmentBox.style.borderRadius = '50%';
+    adjustmentBox.style.border = '1px solid rgba(255,255,255,0.2)';
     adjustmentBox.style.position = 'absolute';
-    adjustmentBox.style.opacity = '0.2';
+    
   },{once: true});
+
+
+
+  
 
 
   

@@ -9,7 +9,7 @@
   align-items: center;
   &>div:nth-child(1){
     width: 100vw;
-    height: 15vh;
+    height: 75vh;
     color: #fff;
     // border-right: 1px solid #fff;
 
@@ -20,14 +20,16 @@
 
     margin-left: 2vw;
     &>h1{
+
       font-size: 3rem;
       height: 15vh;
+      
     }
     &>p{
       width: 75vw;
-      // height: 20vh;
+      height: 20vh;
       text-align: left;
-      line-height: 20px;
+      line-height: 50px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -35,16 +37,16 @@
     }
   }
 
-  &>div:nth-child(2){
-    width: 50vw;
-    height: 40vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    &>div:nth-child(1){
-      width:1.6vw;
-      height: 2.5vw;
-    }
-  }
+  // &>div:nth-child(2){
+  //   width: 50vw;
+  //   height: 60vh;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   &>div:nth-child(1){
+  //     width:1.6vw;
+  //     height: 2.5vw;
+  //   }
+  // }
   
 }

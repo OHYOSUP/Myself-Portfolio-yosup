@@ -1,5 +1,7 @@
 import { iconFunction } from "./javascript_source/hambergerJavascript/hamberger.js";
-import { scroll } from "./javascript_source/landingPage/landingPage.js";
+// import { scroll } from "./javascript_source/landingPage/landingPage.js";
+import { scrollEvent } from "./javascript_source/landingPage/scrollEvent.js";
+
 // import { imageEvent } from "./javascript_source/aboutJavascript/about.js";
 
 
@@ -16,9 +18,8 @@ import { addElem } from "./javascript_source/mainJavascript/main.js";
 const root = document.getElementById('root');
 const main = document.getElementById('main');
 addElem('scroll', main);
-
-const textTwo = document.getElementsByClassName('textTwo');
-import { imageEvent } from "./javascript_source/aboutJavascript/about.js";
+// const textTwo = document.getElementsByClassName('textTwo');
+// import { imageEvent } from "./javascript_source/aboutJavascript/about.js";
 
 
 

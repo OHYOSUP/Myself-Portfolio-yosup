@@ -1,67 +1,69 @@
 
 const landingPage = document.getElementById('landing')
-const centerBox = document.getElementById('backdropBox');
-
-
-
-
-// console.log(maxPosition);
-
-
-
-let posY = landingPage.getBoundingClientRect().top;
-
-let nowPosition = window.scrollY;
-let documentHeight = document.body.offsetHeight
-
-
-// console.log(nowPosition);
-// 현재 스크롤의 위치
-
-// console.log(posY);
-// 현재 스크롤의 위치(음수값)
-// console.log(documentHeight);
-// 문서 전체의 높이
-
+const backdropBox = document.getElementById('backdropBox');
+const textBox = document.getElementById('textbox');
+console.log(textBox);
 
 
 function boxEvent (elems){
-elems.style.opacity = 0;
-elems.style.width = '90vw';
+elems.style.opacity = 0.2;
+elems.style.size = 'cover';
+// elems.style.width = '90vw';
 elems.style.transition = '0.5s';
 };
 
 function boxEventTwo (elems){
-  elems.style.opacity = 0.2;
-  elems.style.width = '80vw';
+  elems.style.opacity = 0.0;
+  // elems.style.width = '80vw';
+  elems.style.size = 'cover';
   elems.style.transition = '0.5s';
   };
 
-// console.log(landingPage.offsetHeight);
+let posY = landing.getBoundingClientRect().top;
+
+let nowPosition = window.scrollY;
+let documentHeight = document.body.offsetHeight
 let nextPage = landingPage.offsetHeight;
 
 
-function scrollEvent(){
-window.scrollBy({left : 0, top : nextPage, behavior : 'smooth'});
-};
 
-function scrollEventUp(){
-  window.scrollBy({left : 0, top : -(documentHeight+posY), behavior : 'smooth'});
+
+
+function scrollEventUp(elems){
+  elems.scrollBy({left : -1920, top : -(documentHeight+posY), behavior : 'smooth'});
   };
 
 
-export const scroll = landingPage.addEventListener('wheel', (e)=>{
+// let isStatus = true;
 
-  let isStatus = false;
-  if(e.deltaY === 100){
-  boxEvent(centerBox);
-  scrollEvent(landingPage);
-  isStatus = true;
-  }
-  if(e.deltaY === -100){
-    boxEventTwo(centerBox);
-    scrollEventUp(centerBox);
-    isStatus = false;
-  }
+export const scroll = function scrollEvent(elems){
+
+elems.addEventListener('wheel', (event)=>{
+event.preventDefault();
+
+
 });
+};
+
+
+
+
+
+// export const scroll = landingPage.addEventListener('wheel', (e)=>{
+// e.preventDefault();
+
+// let isStatus = false;
+
+// if(e.deltaY === 100){
+//   boxEvent(backdropBox);
+//   scrollEvent(backdropBox);
+//   isStatus = true;
+//   console.log(backdropBox);
+//   }
+//   if(e.deltaY === -100){
+//     boxEventTwo(backdropBox);
+//     scrollEventUp(window);
+//     isStatus = false;
+//   }
+// });
 
