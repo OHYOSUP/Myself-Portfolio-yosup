@@ -7,7 +7,7 @@ lightEffect(window, pinLight, 'mousemove')
 
 import { addElem } from "./javascript_source/mainJavascript/main.js";
 const root = document.getElementById('root');
-const main = document.getElementById('main');
+// const main = document.getElementById('main');
 
 
 addElem('scroll', main);
@@ -20,6 +20,8 @@ import { scrollEvent, totheBottom } from "./javascript_source/landingPage/scroll
 totheBottom('wheel', main);
 // landing페이지 스크롤이벤트
 
+import { totheUp } from "./javascript_source/mainJavascript/mainpage-upScroll.js";
+totheUp('wheel', main, landing);
 
 import { navEvent, navEventSecond} from "./javascript_source/workJavascipt/filgrimage_pageTwotest-navigation.js";
 navEvent('mouseover')
