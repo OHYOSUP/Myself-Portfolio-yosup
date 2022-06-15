@@ -18,10 +18,14 @@ import { scrollMoving } from "./javascript_source/workJavascipt/filgrimage_pageT
 
 import { scrollEvent, totheBottom } from "./javascript_source/landingPage/scrollEvent.js";
 totheBottom('wheel', main);
-// landing페이지 스크롤이벤트
-
+// landing페이지 다운스크롤이벤트
 import { totheUp } from "./javascript_source/mainJavascript/mainpage-upScroll.js";
 totheUp('wheel', main, landing);
+// main페이지 업스크롤 이벤트
+
+import {a} from './javascript_source/mainJavascript/mainpage-lightGlow.js'
+
+
 
 import { navEvent, navEventSecond} from "./javascript_source/workJavascipt/filgrimage_pageTwotest-navigation.js";
 navEvent('mouseover')

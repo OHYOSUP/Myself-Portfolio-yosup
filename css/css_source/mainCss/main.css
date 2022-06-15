@@ -13,192 +13,38 @@
   display: flex;
   justify-content: space-around;
 }
-#main > div:nth-child(1) #lightGroupOne {
+#main > div:nth-child(1) #lightGroup {
   width: 3vw;
   height: 5vh;
   display: flex;
   flex-direction: column;
 }
-#main > div:nth-child(1) #lightGroupOne > div:nth-child(1) {
+#main > div:nth-child(1) #lightGroup > div:nth-child(1) {
   width: 3vw;
   height: 2.5vh;
   display: flex;
   justify-content: space-around;
 }
-#main > div:nth-child(1) #lightGroupOne > div:nth-child(1) > div {
+#main > div:nth-child(1) #lightGroup > div:nth-child(1) > div {
   width: 15px;
   height: 15px;
   border-radius: 50%;
   background-color: #fff;
   box-shadow: 0 0 40px 20px #fff, 0 0 70px 40px rgba(255, 253, 23, 0.1), 0 0 100px 60px rgba(255, 156, 10, 0.1);
+  -webkit-animation-name: glow;
+          animation-name: glow;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
 }
-#main > div:nth-child(1) #lightGroupOne > div:nth-child(2) {
+#main > div:nth-child(1) #lightGroup > div:nth-child(2) {
   width: 3vw;
   height: 2.5vh;
   display: flex;
   justify-content: space-around;
 }
-#main > div:nth-child(1) #lightGroupOne > div:nth-child(2) > div {
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background-color: #fff;
-  box-shadow: 0 0 40px 20px #fff, 0 0 70px 40px rgba(255, 253, 23, 0.1), 0 0 100px 60px rgba(255, 156, 10, 0.1);
-}
-#main > div:nth-child(1) #lightGroupTwo {
-  width: 3vw;
-  height: 5vh;
-  display: flex;
-  flex-direction: column;
-}
-#main > div:nth-child(1) #lightGroupTwo > div:nth-child(1) {
-  width: 3vw;
-  height: 2.5vh;
-  display: flex;
-  justify-content: space-around;
-}
-#main > div:nth-child(1) #lightGroupTwo > div:nth-child(1) > div {
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background-color: #fff;
-  box-shadow: 0 0 40px 20px #fff, 0 0 70px 40px rgba(255, 253, 23, 0.1), 0 0 100px 60px rgba(255, 156, 10, 0.1);
-}
-#main > div:nth-child(1) #lightGroupTwo > div:nth-child(2) {
-  width: 3vw;
-  height: 2.5vh;
-  display: flex;
-  justify-content: space-around;
-}
-#main > div:nth-child(1) #lightGroupTwo > div:nth-child(2) > div {
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background-color: #fff;
-  box-shadow: 0 0 40px 20px #fff, 0 0 70px 40px rgba(255, 253, 23, 0.1), 0 0 100px 60px rgba(255, 156, 10, 0.1);
-}
-#main > div:nth-child(1) #lightGroupThree {
-  width: 3vw;
-  height: 5vh;
-  display: flex;
-  flex-direction: column;
-}
-#main > div:nth-child(1) #lightGroupThree > div:nth-child(1) {
-  width: 3vw;
-  height: 2.5vh;
-  display: flex;
-  justify-content: space-around;
-}
-#main > div:nth-child(1) #lightGroupThree > div:nth-child(1) > div {
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background-color: #fff;
-  box-shadow: 0 0 40px 20px #fff, 0 0 70px 40px rgba(255, 253, 23, 0.1), 0 0 100px 60px rgba(255, 156, 10, 0.1);
-}
-#main > div:nth-child(1) #lightGroupThree > div:nth-child(2) {
-  width: 3vw;
-  height: 2.5vh;
-  display: flex;
-  justify-content: space-around;
-}
-#main > div:nth-child(1) #lightGroupThree > div:nth-child(2) > div {
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background-color: #fff;
-  box-shadow: 0 0 40px 20px #fff, 0 0 70px 40px rgba(255, 253, 23, 0.1), 0 0 100px 60px rgba(255, 156, 10, 0.1);
-}
-#main > div:nth-child(1) #lightGroupFour {
-  width: 3vw;
-  height: 5vh;
-  display: flex;
-  flex-direction: column;
-}
-#main > div:nth-child(1) #lightGroupFour > div:nth-child(1) {
-  width: 3vw;
-  height: 2.5vh;
-  display: flex;
-  justify-content: space-around;
-}
-#main > div:nth-child(1) #lightGroupFour > div:nth-child(1) > div {
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background-color: #fff;
-  box-shadow: 0 0 40px 20px #fff, 0 0 70px 40px rgba(255, 253, 23, 0.1), 0 0 100px 60px rgba(255, 156, 10, 0.1);
-}
-#main > div:nth-child(1) #lightGroupFour > div:nth-child(2) {
-  width: 3vw;
-  height: 2.5vh;
-  display: flex;
-  justify-content: space-around;
-}
-#main > div:nth-child(1) #lightGroupFour > div:nth-child(2) > div {
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background-color: #fff;
-  box-shadow: 0 0 40px 20px #fff, 0 0 70px 40px rgba(255, 253, 23, 0.1), 0 0 100px 60px rgba(255, 156, 10, 0.1);
-}
-#main > div:nth-child(1) #lightGroupFive {
-  width: 3vw;
-  height: 5vh;
-  display: flex;
-  flex-direction: column;
-}
-#main > div:nth-child(1) #lightGroupFive > div:nth-child(1) {
-  width: 3vw;
-  height: 2.5vh;
-  display: flex;
-  justify-content: space-around;
-}
-#main > div:nth-child(1) #lightGroupFive > div:nth-child(1) > div {
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background-color: #fff;
-  box-shadow: 0 0 40px 20px #fff, 0 0 70px 40px rgba(255, 253, 23, 0.1), 0 0 100px 60px rgba(255, 156, 10, 0.1);
-}
-#main > div:nth-child(1) #lightGroupFive > div:nth-child(2) {
-  width: 3vw;
-  height: 2.5vh;
-  display: flex;
-  justify-content: space-around;
-}
-#main > div:nth-child(1) #lightGroupFive > div:nth-child(2) > div {
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background-color: #fff;
-  box-shadow: 0 0 40px 20px #fff, 0 0 70px 40px rgba(255, 253, 23, 0.1), 0 0 100px 60px rgba(255, 156, 10, 0.1);
-}
-#main > div:nth-child(1) #lightGroupSix {
-  width: 3vw;
-  height: 5vh;
-  display: flex;
-  flex-direction: column;
-}
-#main > div:nth-child(1) #lightGroupSix > div:nth-child(1) {
-  width: 3vw;
-  height: 2.5vh;
-  display: flex;
-  justify-content: space-around;
-}
-#main > div:nth-child(1) #lightGroupSix > div:nth-child(1) > div {
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background-color: #fff;
-  box-shadow: 0 0 40px 20px #fff, 0 0 70px 40px rgba(255, 253, 23, 0.1), 0 0 100px 60px rgba(255, 156, 10, 0.1);
-}
-#main > div:nth-child(1) #lightGroupSix > div:nth-child(2) {
-  width: 3vw;
-  height: 2.5vh;
-  display: flex;
-  justify-content: space-around;
-}
-#main > div:nth-child(1) #lightGroupSix > div:nth-child(2) > div {
+#main > div:nth-child(1) #lightGroup > div:nth-child(2) > div {
   width: 15px;
   height: 15px;
   border-radius: 50%;
@@ -277,197 +123,71 @@
   display: flex;
   justify-content: space-around;
 }
-#main > div:nth-child(4) #lightGroupOne_bottom {
+#main > div:nth-child(4) #lightGroup_bottom {
   width: 3vw;
   height: 5vh;
   display: flex;
   flex-direction: column;
 }
-#main > div:nth-child(4) #lightGroupOne_bottom > div:nth-child(1) {
+#main > div:nth-child(4) #lightGroup_bottom > div:nth-child(1) {
   width: 3vw;
   height: 2.5vh;
   display: flex;
   justify-content: space-around;
 }
-#main > div:nth-child(4) #lightGroupOne_bottom > div:nth-child(1) > div {
+#main > div:nth-child(4) #lightGroup_bottom > div:nth-child(1) > div {
   width: 15px;
   height: 15px;
   border-radius: 50%;
   background-color: #fff;
   box-shadow: 0 0 40px 20px #fff, 0 0 70px 40px rgba(255, 253, 23, 0.1), 0 0 100px 60px rgba(255, 156, 10, 0.1);
 }
-#main > div:nth-child(4) #lightGroupOne_bottom > div:nth-child(2) {
+#main > div:nth-child(4) #lightGroup_bottom > div:nth-child(2) {
   width: 3vw;
   height: 2.5vh;
   display: flex;
   justify-content: space-around;
 }
-#main > div:nth-child(4) #lightGroupOne_bottom > div:nth-child(2) > div {
+#main > div:nth-child(4) #lightGroup_bottom > div:nth-child(2) > div {
   width: 15px;
   height: 15px;
   border-radius: 50%;
   background-color: #fff;
   box-shadow: 0 0 40px 20px #fff, 0 0 70px 40px rgba(255, 253, 23, 0.1), 0 0 100px 60px rgba(255, 156, 10, 0.1);
 }
-#main > div:nth-child(4) #lightGroupTwo_bottom {
-  width: 3vw;
-  height: 5vh;
-  display: flex;
-  flex-direction: column;
+
+@-webkit-keyframes glow {
+  0% {
+    box-shadow: 0 0 40px 20px #fff, 0 0 70px 40px rgba(255, 253, 23, 0.1), 0 0 100px 60px rgba(255, 156, 10, 0.1);
+  }
+  25% {
+    box-shadow: 0 0 40px 20px #fff, 0 0 70px 40px rgba(255, 253, 23, 0.3), 0 0 100px 60px rgba(255, 156, 10, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 40px 20px #fff, 0 0 70px 40px rgba(255, 253, 23, 0.5), 0 0 100px 60px rgba(255, 156, 10, 0.3);
+  }
+  75% {
+    box-shadow: 0 0 40px 20px #fff, 0 0 70px 40px rgba(255, 253, 23, 0.8), 0 0 100px 60px rgba(255, 156, 10, 0.9);
+  }
+  100% {
+    box-shadow: 0 0 40px 20px #fff, 0 0 70px 40px rgba(255, 253, 23, 0.1), 0 0 100px 60px rgba(255, 156, 10, 0.3);
+  }
 }
-#main > div:nth-child(4) #lightGroupTwo_bottom > div:nth-child(1) {
-  width: 3vw;
-  height: 2.5vh;
-  display: flex;
-  justify-content: space-around;
-}
-#main > div:nth-child(4) #lightGroupTwo_bottom > div:nth-child(1) > div {
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background-color: #fff;
-  box-shadow: 0 0 40px 20px #fff, 0 0 70px 40px rgba(255, 253, 23, 0.1), 0 0 100px 60px rgba(255, 156, 10, 0.1);
-}
-#main > div:nth-child(4) #lightGroupTwo_bottom > div:nth-child(2) {
-  width: 3vw;
-  height: 2.5vh;
-  display: flex;
-  justify-content: space-around;
-}
-#main > div:nth-child(4) #lightGroupTwo_bottom > div:nth-child(2) > div {
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background-color: #fff;
-  box-shadow: 0 0 40px 20px #fff, 0 0 70px 40px rgba(255, 253, 23, 0.1), 0 0 100px 60px rgba(255, 156, 10, 0.1);
-}
-#main > div:nth-child(4) #lightGroupThree_bottom {
-  width: 3vw;
-  height: 5vh;
-  display: flex;
-  flex-direction: column;
-}
-#main > div:nth-child(4) #lightGroupThree_bottom > div:nth-child(1) {
-  width: 3vw;
-  height: 2.5vh;
-  display: flex;
-  justify-content: space-around;
-}
-#main > div:nth-child(4) #lightGroupThree_bottom > div:nth-child(1) > div {
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background-color: #fff;
-  box-shadow: 0 0 40px 20px #fff, 0 0 70px 40px rgba(255, 253, 23, 0.1), 0 0 100px 60px rgba(255, 156, 10, 0.1);
-  -webkit-animation-name: glowingTop;
-          animation-name: glowingTop;
-}
-#main > div:nth-child(4) #lightGroupThree_bottom > div:nth-child(2) {
-  width: 3vw;
-  height: 2.5vh;
-  display: flex;
-  justify-content: space-around;
-}
-#main > div:nth-child(4) #lightGroupThree_bottom > div:nth-child(2) > div {
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background-color: #fff;
-  box-shadow: 0 0 40px 20px #fff, 0 0 70px 40px rgba(255, 253, 23, 0.1), 0 0 100px 60px rgba(255, 156, 10, 0.1);
-}
-#main > div:nth-child(4) #lightGroupFour_bottom {
-  width: 3vw;
-  height: 5vh;
-  display: flex;
-  flex-direction: column;
-}
-#main > div:nth-child(4) #lightGroupFour_bottom > div:nth-child(1) {
-  width: 3vw;
-  height: 2.5vh;
-  display: flex;
-  justify-content: space-around;
-}
-#main > div:nth-child(4) #lightGroupFour_bottom > div:nth-child(1) > div {
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background-color: #fff;
-  box-shadow: 0 0 40px 20px #fff, 0 0 70px 40px rgba(255, 253, 23, 0.1), 0 0 100px 60px rgba(255, 156, 10, 0.1);
-}
-#main > div:nth-child(4) #lightGroupFour_bottom > div:nth-child(2) {
-  width: 3vw;
-  height: 2.5vh;
-  display: flex;
-  justify-content: space-around;
-}
-#main > div:nth-child(4) #lightGroupFour_bottom > div:nth-child(2) > div {
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background-color: #fff;
-  box-shadow: 0 0 40px 20px #fff, 0 0 70px 40px rgba(255, 253, 23, 0.1), 0 0 100px 60px rgba(255, 156, 10, 0.1);
-}
-#main > div:nth-child(4) #lightGroupFive_bottom {
-  width: 3vw;
-  height: 5vh;
-  display: flex;
-  flex-direction: column;
-}
-#main > div:nth-child(4) #lightGroupFive_bottom > div:nth-child(1) {
-  width: 3vw;
-  height: 2.5vh;
-  display: flex;
-  justify-content: space-around;
-}
-#main > div:nth-child(4) #lightGroupFive_bottom > div:nth-child(1) > div {
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background-color: #fff;
-  box-shadow: 0 0 40px 20px #fff, 0 0 70px 40px rgba(255, 253, 23, 0.1), 0 0 100px 60px rgba(255, 156, 10, 0.1);
-}
-#main > div:nth-child(4) #lightGroupFive_bottom > div:nth-child(2) {
-  width: 3vw;
-  height: 2.5vh;
-  display: flex;
-  justify-content: space-around;
-}
-#main > div:nth-child(4) #lightGroupFive_bottom > div:nth-child(2) > div {
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background-color: #fff;
-  box-shadow: 0 0 40px 20px #fff, 0 0 70px 40px rgba(255, 253, 23, 0.1), 0 0 100px 60px rgba(255, 156, 10, 0.1);
-}
-#main > div:nth-child(4) #lightGroupSix_bottom {
-  width: 3vw;
-  height: 5vh;
-  display: flex;
-  flex-direction: column;
-}
-#main > div:nth-child(4) #lightGroupSix_bottom > div:nth-child(1) {
-  width: 3vw;
-  height: 2.5vh;
-  display: flex;
-  justify-content: space-around;
-}
-#main > div:nth-child(4) #lightGroupSix_bottom > div:nth-child(1) > div {
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background-color: #fff;
-  box-shadow: 0 0 40px 20px #fff, 0 0 70px 40px rgba(255, 253, 23, 0.1), 0 0 100px 60px rgba(255, 156, 10, 0.1);
-}
-#main > div:nth-child(4) #lightGroupSix_bottom > div:nth-child(2) {
-  width: 3vw;
-  height: 2.5vh;
-  display: flex;
-  justify-content: space-around;
-}
-#main > div:nth-child(4) #lightGroupSix_bottom > div:nth-child(2) > div {
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background-color: #fff;
-  box-shadow: 0 0 40px 20px #fff, 0 0 70px 40px rgba(255, 253, 23, 0.1), 0 0 100px 60px rgba(255, 156, 10, 0.1);
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 40px 20px #fff, 0 0 70px 40px rgba(255, 253, 23, 0.1), 0 0 100px 60px rgba(255, 156, 10, 0.1);
+  }
+  25% {
+    box-shadow: 0 0 40px 20px #fff, 0 0 70px 40px rgba(255, 253, 23, 0.3), 0 0 100px 60px rgba(255, 156, 10, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 40px 20px #fff, 0 0 70px 40px rgba(255, 253, 23, 0.5), 0 0 100px 60px rgba(255, 156, 10, 0.3);
+  }
+  75% {
+    box-shadow: 0 0 40px 20px #fff, 0 0 70px 40px rgba(255, 253, 23, 0.8), 0 0 100px 60px rgba(255, 156, 10, 0.9);
+  }
+  100% {
+    box-shadow: 0 0 40px 20px #fff, 0 0 70px 40px rgba(255, 253, 23, 0.1), 0 0 100px 60px rgba(255, 156, 10, 0.3);
+  }
 }/*# sourceMappingURL=main.css.map */
