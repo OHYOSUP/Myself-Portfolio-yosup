@@ -14,6 +14,10 @@ titleText.style.color = '#fff';
 
 titleText.textContent = "";
 const splitText = strText.split("");
+
+
+
+
 console.log(splitText);
 
 
