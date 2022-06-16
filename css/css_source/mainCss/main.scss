@@ -23,6 +23,8 @@ justify-content: space-around;
     display: flex;
     flex-direction: column;
     // position: relative;
+    opacity: 0;
+
     // border: 1px solid #fff;
 &>div:nth-child(1){
   width: 3vw;
@@ -30,7 +32,8 @@ justify-content: space-around;
   display: flex;
   justify-content: space-around;
   // background-color: #FF6C34;
-  
+  // opacity: 0;
+
 
   &>div{
     width: 15px;
@@ -40,9 +43,8 @@ justify-content: space-around;
     box-shadow: 0 0 40px 20px #fff,
     0 0 70px 40px rgba($color: #FFFD17, $alpha: 0.1),
     0 0 100px 60px rgba($color: #FF9C0A, $alpha: 0.1);
-    animation-name: glow;
-    animation-duration: 3s;
-    animation-delay: 3s;
+    // opacity: 0;
+    
 }
 }
 &>div:nth-child(2){
@@ -59,6 +61,8 @@ justify-content: space-around;
     box-shadow: 0 0 40px 20px #fff,
     0 0 70px 40px rgba($color: #FFFD17, $alpha: 0.1),
     0 0 100px 60px rgba($color: #FF9C0A, $alpha: 0.1);
+    // opacity: 0;
+
 }
 }
 }
@@ -156,6 +160,7 @@ justify-content: space-around;
         height: 5vh;
         display: flex;
         flex-direction: column;
+        opacity: 0;
         
         // position: relative;
         // border: 1px solid #fff;
@@ -173,6 +178,7 @@ justify-content: space-around;
         box-shadow: 0 0 40px 20px #fff,
         0 0 70px 40px rgba($color: #FFFD17, $alpha: 0.1),
         0 0 100px 60px rgba($color: #FF9C0A, $alpha: 0.1);
+
     }
     }
     &>div:nth-child(2){
@@ -189,6 +195,7 @@ justify-content: space-around;
         box-shadow: 0 0 40px 20px #fff,
         0 0 70px 40px rgba($color: #FFFD17, $alpha: 0.1),
         0 0 100px 60px rgba($color: #FF9C0A, $alpha: 0.1);
+        // opacity: 0;
     }
     }
     
@@ -198,34 +205,41 @@ justify-content: space-around;
     }
 }
 
+.test{
+  opacity: 0;
+  animation-name: glowUp;
+  animation-duration: 1s;
+  // animation-delay: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+.test2{
+  opacity: 0;
+  animation-name: glowUp;
+  animation-duration: 1s;
+  // animation-delay: 0.3s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
 
-@keyframes glow {
+@keyframes glowUp {
   0% {
+    opacity: 0;
     box-shadow: 0 0 40px 20px #fff,
     0 0 70px 40px rgba($color: #FFFD17, $alpha: 0.1),
     0 0 100px 60px rgba($color: #FF9C0A, $alpha: 0.1);
   }
-  25%{
-    box-shadow: 0 0 40px 20px #fff,
-    0 0 70px 40px rgba($color: #FFFD17, $alpha: 0.3),
-    0 0 100px 60px rgba($color: #FF9C0A, $alpha: 0.5);
-  }
-  50%{
+
+  75%{
+    opacity: 0.5;
     box-shadow: 0 0 40px 20px #fff,
     0 0 70px 40px rgba($color: #FFFD17, $alpha: 0.5),
-    0 0 100px 60px rgba($color: #FF9C0A, $alpha: 0.3);
-  }
-  75%{
-    box-shadow: 0 0 40px 20px #fff,
-    0 0 70px 40px rgba($color: #FFFD17, $alpha: 0.8),
-    0 0 100px 60px rgba($color: #FF9C0A, $alpha: 0.9);
+    0 0 100px 60px rgba($color: #FF9C0A, $alpha: 0.5);
   }
   100%{
-    box-shadow: 0 0 40px 20px #fff,
+    opacity: 0.8;
+    box-shadow: 0 0 60px 40px #fff
     0 0 70px 40px rgba($color: #FFFD17, $alpha: 0.1),
-    0 0 100px 60px rgba($color: #FF9C0A, $alpha: 0.3);
+    0 0 100px 60px rgba($color: #FF9C0A, $alpha: 0.1);
   }
 }
-
-
-

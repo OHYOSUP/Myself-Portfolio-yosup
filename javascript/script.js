@@ -23,7 +23,7 @@ import { totheUp } from "./javascript_source/mainJavascript/mainpage-upScroll.js
 totheUp('wheel', main, landing);
 // main페이지 업스크롤 이벤트
 
-import {a} from './javascript_source/mainJavascript/mainpage-lightGlow.js'
+import {lightItUp, lightItUp_bottom} from './javascript_source/mainJavascript/mainpage-lightGlow.js'
 
 
 

@@ -18,6 +18,7 @@
   height: 5vh;
   display: flex;
   flex-direction: column;
+  opacity: 0;
 }
 #main > div:nth-child(1) #lightGroup > div:nth-child(1) {
   width: 3vw;
@@ -31,12 +32,6 @@
   border-radius: 50%;
   background-color: #fff;
   box-shadow: 0 0 40px 20px #fff, 0 0 70px 40px rgba(255, 253, 23, 0.1), 0 0 100px 60px rgba(255, 156, 10, 0.1);
-  -webkit-animation-name: glow;
-          animation-name: glow;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
 }
 #main > div:nth-child(1) #lightGroup > div:nth-child(2) {
   width: 3vw;
@@ -128,6 +123,7 @@
   height: 5vh;
   display: flex;
   flex-direction: column;
+  opacity: 0;
 }
 #main > div:nth-child(4) #lightGroup_bottom > div:nth-child(1) {
   width: 3vw;
@@ -156,38 +152,56 @@
   box-shadow: 0 0 40px 20px #fff, 0 0 70px 40px rgba(255, 253, 23, 0.1), 0 0 100px 60px rgba(255, 156, 10, 0.1);
 }
 
-@-webkit-keyframes glow {
+.test {
+  opacity: 0;
+  -webkit-animation-name: glowUp;
+          animation-name: glowUp;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.test2 {
+  opacity: 0;
+  -webkit-animation-name: glowUp;
+          animation-name: glowUp;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes glowUp {
   0% {
+    opacity: 0;
     box-shadow: 0 0 40px 20px #fff, 0 0 70px 40px rgba(255, 253, 23, 0.1), 0 0 100px 60px rgba(255, 156, 10, 0.1);
   }
-  25% {
-    box-shadow: 0 0 40px 20px #fff, 0 0 70px 40px rgba(255, 253, 23, 0.3), 0 0 100px 60px rgba(255, 156, 10, 0.5);
-  }
-  50% {
-    box-shadow: 0 0 40px 20px #fff, 0 0 70px 40px rgba(255, 253, 23, 0.5), 0 0 100px 60px rgba(255, 156, 10, 0.3);
-  }
   75% {
-    box-shadow: 0 0 40px 20px #fff, 0 0 70px 40px rgba(255, 253, 23, 0.8), 0 0 100px 60px rgba(255, 156, 10, 0.9);
+    opacity: 0.5;
+    box-shadow: 0 0 40px 20px #fff, 0 0 70px 40px rgba(255, 253, 23, 0.5), 0 0 100px 60px rgba(255, 156, 10, 0.5);
   }
   100% {
-    box-shadow: 0 0 40px 20px #fff, 0 0 70px 40px rgba(255, 253, 23, 0.1), 0 0 100px 60px rgba(255, 156, 10, 0.3);
+    opacity: 0.8;
+    box-shadow: 0 0 60px 40px #fff 0 0 70px 40px rgba(255, 253, 23, 0.1), 0 0 100px 60px rgba(255, 156, 10, 0.1);
   }
 }
 
-@keyframes glow {
+@keyframes glowUp {
   0% {
+    opacity: 0;
     box-shadow: 0 0 40px 20px #fff, 0 0 70px 40px rgba(255, 253, 23, 0.1), 0 0 100px 60px rgba(255, 156, 10, 0.1);
   }
-  25% {
-    box-shadow: 0 0 40px 20px #fff, 0 0 70px 40px rgba(255, 253, 23, 0.3), 0 0 100px 60px rgba(255, 156, 10, 0.5);
-  }
-  50% {
-    box-shadow: 0 0 40px 20px #fff, 0 0 70px 40px rgba(255, 253, 23, 0.5), 0 0 100px 60px rgba(255, 156, 10, 0.3);
-  }
   75% {
-    box-shadow: 0 0 40px 20px #fff, 0 0 70px 40px rgba(255, 253, 23, 0.8), 0 0 100px 60px rgba(255, 156, 10, 0.9);
+    opacity: 0.5;
+    box-shadow: 0 0 40px 20px #fff, 0 0 70px 40px rgba(255, 253, 23, 0.5), 0 0 100px 60px rgba(255, 156, 10, 0.5);
   }
   100% {
-    box-shadow: 0 0 40px 20px #fff, 0 0 70px 40px rgba(255, 253, 23, 0.1), 0 0 100px 60px rgba(255, 156, 10, 0.3);
+    opacity: 0.8;
+    box-shadow: 0 0 60px 40px #fff 0 0 70px 40px rgba(255, 253, 23, 0.1), 0 0 100px 60px rgba(255, 156, 10, 0.1);
   }
 }/*# sourceMappingURL=main.css.map */
