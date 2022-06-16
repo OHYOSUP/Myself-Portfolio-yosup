@@ -51,33 +51,3 @@ function complete(){
 }
 
 
-
-
-
-// for(let i=0 ; i< splitText.length; i++){
-//   titleText.innerHTML += "<span>" + splitText[i] + "</span>";
-// }
-
-
-// let char = 0;
-// let timer = setInterval(onTick,50);
-
-// function onTick(){
-//   const span = titleText.querySelector('span')[char];
-//   span.classList.add('fade');
-//   char++
-//   if(char === splitText.length){
-//     complete();
-//     return;
-//   }
-// }
-
-
-// function complete(){
-//   clearInterval(timer);
-//   timer = null;
-// }
-
-
-
-

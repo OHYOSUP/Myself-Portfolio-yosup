@@ -23,7 +23,7 @@ export const addElem = (eventType, parentTarget) => window.addEventListener(even
 
   
   
-    console.log(event.scrollY);
+    // console.log(event.scrollY);
     const adjustmentBox = document.createElement('div');
     parentTarget.appendChild(adjustmentBox);
 

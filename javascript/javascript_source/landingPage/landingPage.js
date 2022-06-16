@@ -29,9 +29,9 @@ let nextPage = landingPage.offsetHeight;
 
 
 
-function scrollEventUp(elems){
-  elems.scrollBy({left : -1920, top : -(documentHeight+posY), behavior : 'smooth'});
-  };
+// function scrollEventUp(elems){
+//   elems.scrollBy({left : -1920, top : -(documentHeight+posY), behavior : 'smooth'});
+//   };
 
 
 // let isStatus = true;
@@ -40,8 +40,6 @@ export const scroll = function scrollEvent(elems){
 
 elems.addEventListener('wheel', (event)=>{
 event.preventDefault();
-
-
 });
 };
 
