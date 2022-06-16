@@ -32,20 +32,41 @@ export const lightItUp = main.onload = function glowing (){
 
 let d = -1;
 
+console.log(window.pageYOffset);
+let currnetYpos = window.pageYOffset;
+
 export const lightItUp_bottom = main.onload = function glowing_bottom (){
     let timer = setInterval(glowing_bottom,100);
     d++;
+
+
     if(d < downStair.length){
     downStair[d].classList.add('test');
     console.log(d);
     if(d >= downStair.length){
       clearInterval(timer);
     }
+    
     }
   }
 
     
       
+// export const lightItUp = main.onload = function bulbEvent (elem){
+//   upStair.forEach(function(){
+//     for(let i = 0; i < upStair.length; i++){
+//       setInterval(function(){
+//       // elem.style.opacity = 0;
+//         i++;
+//         // console.log(i);
+//         upStair[i].classList.add('test');
+//       },1000);
+//       }
+//   })
+//   }
+// let timer = setInterval(lightItUp(),1000);
+// console.log(timer);
+// lightItUp();
   
 
 
@@ -101,21 +122,6 @@ export const lightItUp_bottom = main.onload = function glowing_bottom (){
 
 
 
-// export const lightItUp = main.onload = function bulbEvent (elem){
-//   upStair.forEach(function(){
-//     for(let i = 0; i < upStair.length; i++){
-//       setInterval(function(){
-//       // elem.style.opacity = 0;
-//         i++;
-//         // console.log(i);
-//         upStair[i].classList.add('test');
-//       },1000);
-//       }
-//   })
-//   }
-// let timer = setInterval(lightItUp(),1000);
-// console.log(timer);
-// lightItUp();
 
 
 // console.log(timer);

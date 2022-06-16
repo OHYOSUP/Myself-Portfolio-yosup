@@ -24,14 +24,14 @@ totheUp('wheel', main, landing);
 // main페이지 업스크롤 이벤트
 
 import { mainTotheBottom } from "./javascript_source/mainJavascript/mainPageScroll.js";
-const work = document.getElementById('work');
-mainTotheBottom('wheel',work)
+const footer = document.getElementById('footer');
+mainTotheBottom('wheel',footer)
 
 
 import {lightItUp, lightItUp_bottom} from './javascript_source/mainJavascript/mainpage-lightGlow.js'
 
-main.load = lightItUp();
-main.load = lightItUp_bottom();
+lightItUp();
+setTimeout(lightItUp_bottom,300);
 
 
 import { navEvent, navEventSecond} from "./javascript_source/workJavascipt/filgrimage_pageTwotest-navigation.js";
