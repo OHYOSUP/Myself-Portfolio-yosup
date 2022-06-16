@@ -213,14 +213,7 @@ justify-content: space-around;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
 }
-.test2{
-  opacity: 0;
-  animation-name: glowUp;
-  animation-duration: 1s;
-  // animation-delay: 0.3s;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
-}
+
 
 @keyframes glowUp {
   0% {

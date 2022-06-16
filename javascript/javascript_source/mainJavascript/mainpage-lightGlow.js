@@ -1,14 +1,54 @@
 const lightGroup = document.querySelectorAll('#lightGroup');
 const lightGroup_bottom = document.querySelectorAll('#lightGroup_bottom');
 const main = document.getElementById('main');
-//  console.log(lightGroup);
+console.log(main);
 // export const b = console.log(lightGroup_bottom);
 
 // lightGroup.style.opacity = 0;
 const upStair = Array.from(lightGroup);
 const downStair = Array.from(lightGroup_bottom);
 
-console.log(upStair.length);
+// console.log(upStair.length);
+
+
+let i = -1;
+
+
+
+// export const lightItUp = main.onload = 
+
+export const lightItUp = main.onload = function glowing (){
+  let timer = setInterval(glowing,100);
+  i++;
+  if(i < upStair.length){
+  upStair[i].classList.add('test');
+  console.log(i);
+  if(i >= upStair.length){
+    clearInterval(timer);
+  }
+  }
+}
+
+
+let d = -1;
+
+export const lightItUp_bottom = main.onload = function glowing_bottom (){
+    let timer = setInterval(glowing_bottom,100);
+    d++;
+    if(d < downStair.length){
+    downStair[d].classList.add('test');
+    console.log(d);
+    if(d >= downStair.length){
+      clearInterval(timer);
+    }
+    }
+  }
+
+    
+      
+  
+
+
 
 // console.log(Array.isArray(upStair));
 // console.log(upStair[0]);
@@ -34,46 +74,6 @@ console.log(upStair.length);
 
 // console.log(bulbsOne);
 // console.log(bulbsTwo);
-let i = -1;
-
-
-
-// export const lightItUp = main.onload = 
-
-function glowing (){
-  let timer = setInterval(glowing,100);
-  i++;
-  if(i < upStair.length){
-  upStair[i].classList.add('test');
-  console.log(i);
-  if(i >= upStair.length){
-    clearInterval(timer);
-  }
-  }
-}
-    
-export const lightItUp = glowing();
-
-
-
-
-
-let d = -1;
-
-  function glowing_bottom (){
-    let timer = setInterval(glowing_bottom,100);
-    d++;
-    if(d < downStair.length){
-    downStair[d].classList.add('test');
-    console.log(d);
-    if(d >= downStair.length){
-      clearInterval(timer);
-    }
-    }
-  }
-      
-  export const lightItUp_bottom = glowing_bottom();
-
 
 
 

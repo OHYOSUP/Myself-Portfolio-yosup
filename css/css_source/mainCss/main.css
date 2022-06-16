@@ -164,18 +164,6 @@
           animation-fill-mode: forwards;
 }
 
-.test2 {
-  opacity: 0;
-  -webkit-animation-name: glowUp;
-          animation-name: glowUp;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
 @-webkit-keyframes glowUp {
   0% {
     opacity: 0;
