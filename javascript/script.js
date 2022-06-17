@@ -25,8 +25,11 @@ totheUp('wheel', main, landing);
 // main페이지 업스크롤 이벤트
 
 import { mainTotheBottom } from "./javascript_source/mainJavascript/mainPageScroll.js";
-const footer = document.getElementById('footer');
+// const footer = document.getElementById('footer');
 mainTotheBottom('wheel',footer)
+
+import { footerTotheBottom } from "./javascript_source/footerjavascript/footerScrollEvent.js";
+footerTotheBottom('wheel', filgrimage_pageOne)
 
 
 
@@ -42,7 +45,7 @@ import { navEvent, navEventSecond} from "./javascript_source/workJavascipt/filgr
 navEvent('mouseover')
 navEventSecond('mouseout')
 
-
-
+import { filgrimage_pageOneTotheBottom } from "./javascript_source/workJavascipt/filgrimagePageOne-downScroll.js";
+filgrimage_pageOneTotheBottom('wheel', filgrimage_pageTwo)
 
 
