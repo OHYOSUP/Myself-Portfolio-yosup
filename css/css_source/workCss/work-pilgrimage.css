@@ -44,29 +44,12 @@
   width: 100vw;
   height: 100vh;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
-#filgrimage_pageOne > div:nth-child(1) > div {
+#filgrimage_pageOne > div:nth-child(1) > img {
   width: 16.6vw;
   height: 100vh;
-  background-size: cover;
-}
-#filgrimage_pageOne > div:nth-child(1) > div:nth-child(1) {
-  background-image: url(/Image/leejoo.svg);
-}
-#filgrimage_pageOne > div:nth-child(1) > div:nth-child(2) {
-  background-image: url(/Image/byun.svg);
-}
-#filgrimage_pageOne > div:nth-child(1) > div:nth-child(3) {
-  background-image: url(/Image/leemin.svg);
-}
-#filgrimage_pageOne > div:nth-child(1) > div:nth-child(4) {
-  background-image: url(/Image/gugyo.svg);
-}
-#filgrimage_pageOne > div:nth-child(1) > div:nth-child(5) {
-  background-image: url(/Image/jeonteo.svg);
-}
-#filgrimage_pageOne > div:nth-child(1) > div:nth-child(6) {
-  background-image: url(/Image/untae.svg);
 }
 #filgrimage_pageOne span {
   opacity: 0;
