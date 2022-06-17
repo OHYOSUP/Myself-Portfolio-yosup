@@ -18,6 +18,9 @@
     align-items: center;
     color: #fff;
     font-size: 3rem;
+
+
+    
     &>p:nth-child(1){
       height: 10vh;
       letter-spacing: 15px;
@@ -79,7 +82,6 @@
     //   background-image: url(/Image/untae.svg);
     // }
 
-}
 span{
   opacity: 0;
 }
@@ -345,5 +347,6 @@ span.fade{
   }
 }
 
+}
 }
 }

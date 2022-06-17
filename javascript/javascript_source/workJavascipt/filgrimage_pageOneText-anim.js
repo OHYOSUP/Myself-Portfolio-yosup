@@ -3,35 +3,38 @@ const strText = titleText.textContent;
 
 
 titleText.style.fontSize = '10rem';
-titleText.style.position = 'absolute';
+titleText.style.opacity = 1;
+titleText.style.position = 'relative';
+titleText.style.zIndex = 10;
 titleText.style.left = '4vw'
-titleText.style.top = '170vh'
+titleText.style.top = '-30vh'
 titleText.style.color = '#fff';
 
+console.log(titleText);
 
 
-// console.log(titleText);
+console.log(titleText);
 
 titleText.textContent = "";
 const splitText = strText.split("");
-console.log(splitText);
+// console.log(splitText);
 
 
 for(let i = 0; i<splitText.length; i++){
   titleText.innerHTML += "<span>" + splitText[i] + "</span>";
 };
 
-console.log(titleText);
-console.dir(titleText);
+// console.log(titleText);
+// console.dir(titleText);
 
 
 let char = 0;
 
+
+
 let timer = setInterval(fade,50)
 
-
-
-export const textAni = function fade(){
+export  function fade(){
   const span = titleText.querySelectorAll('span')[char];
   span.classList.add('fade');
   char++

@@ -29,10 +29,13 @@ const footer = document.getElementById('footer');
 mainTotheBottom('wheel',footer)
 
 
+
 import {lightItUp, lightItUp_bottom} from './javascript_source/mainJavascript/mainpage-lightGlow.js'
 
 lightItUp();
 setTimeout(lightItUp_bottom,300);
+
+import { fade } from "./javascript_source/workJavascipt/filgrimage_pageOneText-anim.js";
 
 
 import { navEvent, navEventSecond} from "./javascript_source/workJavascipt/filgrimage_pageTwotest-navigation.js";
