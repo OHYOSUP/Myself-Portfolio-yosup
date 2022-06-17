@@ -25,14 +25,14 @@ function totheLeft (){
 i++;
   requestAnimationFrame(totheLeft);
   backgroundCity.style.transform = `translateX(${-i}px)`;
-
   if(i >= 689){
     backgroundCity.style.opacity = 0;
     backgroundCity.style.transition = '1s';
   }
 }
-
 export const scrollEvent = totheLeft();
+
+// 백그라운드 슬라이드
 
 
 

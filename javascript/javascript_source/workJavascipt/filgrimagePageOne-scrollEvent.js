@@ -13,3 +13,12 @@ export const filgrimage_pageOneTotheBottom = function downscroll(eventType,elems
   }
   });
 } 
+
+export const filgrimage_pageOneTotheTop = function downscroll(eventType,elems){
+  filgrimage_pageOne.addEventListener(eventType, (e)=>{
+    e.preventDefault();
+  if(e.deltaY < 0){
+    elems.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
+  }
+  });
+} 

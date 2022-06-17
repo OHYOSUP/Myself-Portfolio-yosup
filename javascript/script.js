@@ -12,40 +12,52 @@ const main = document.getElementById('main');
 
 
 addElem('scroll', main);
-import { scrollMoving } from "./javascript_source/workJavascipt/filgrimage_pageTwotest.js";
+// import { scrollMoving } from "./javascript_source/workJavascipt/filgrimage_pageTwoUpScroll.js";
 
 
 
 
 import { scrollEvent, totheBottom } from "./javascript_source/landingPage/scrollEvent.js";
 totheBottom('wheel', main);
-// landing페이지 다운스크롤이벤트
-import { totheUp } from "./javascript_source/mainJavascript/mainpage-upScroll.js";
+// landing페이지 백그라운드 슬라이드, 다운스크롤이벤트
+
+
+import { totheUp, mainTotheBottom } from "./javascript_source/mainJavascript/mainpage-upScroll.js";
 totheUp('wheel', main, landing);
-// main페이지 업스크롤 이벤트
-
-import { mainTotheBottom } from "./javascript_source/mainJavascript/mainPageScroll.js";
-// const footer = document.getElementById('footer');
 mainTotheBottom('wheel',footer)
-
-import { footerTotheBottom } from "./javascript_source/footerjavascript/footerScrollEvent.js";
-footerTotheBottom('wheel', filgrimage_pageOne)
-
-
-
+// main페이지 스크롤 이벤트
 import {lightItUp, lightItUp_bottom} from './javascript_source/mainJavascript/mainpage-lightGlow.js'
-
 lightItUp();
 setTimeout(lightItUp_bottom,300);
+// main페이지 조명 애니메이션
 
+
+import { footerTotheBottom, footerTotheTop } from "./javascript_source/footerjavascript/footerScrollEvent.js";
+footerTotheTop('wheel', main)
+footerTotheBottom('wheel', work)
+// footer 스크롤 이벤트
+
+import { workUpScroll, workDownScroll } from "./javascript_source/workJavascipt/workMainpage-ScrollEvent.js";
+workUpScroll('wheel', footer);
+workDownScroll('wheel', filgrimage_pageOne);
+// workMain페이지 스크롤이벤트
 import { fade } from "./javascript_source/workJavascipt/filgrimage_pageOneText-anim.js";
+// pilgrimage_pageOne 텍스트애니메이션
+import { filgrimage_pageOneTotheBottom, filgrimage_pageOneTotheTop } from "./javascript_source/workJavascipt/filgrimagePageOne-scrollEvent.js";
+filgrimage_pageOneTotheBottom('wheel', filgrimage_pageTwo)
+filgrimage_pageOneTotheTop('wheel', work)
+// filgrimage_pageOne 스크롤이벤트
+
 
 
 import { navEvent, navEventSecond} from "./javascript_source/workJavascipt/filgrimage_pageTwotest-navigation.js";
 navEvent('mouseover')
 navEventSecond('mouseout')
+// filgrimage_pageTwo 네비게이션 이벤트
 
-import { filgrimage_pageOneTotheBottom } from "./javascript_source/workJavascipt/filgrimagePageOne-downScroll.js";
-filgrimage_pageOneTotheBottom('wheel', filgrimage_pageTwo)
+import { filgrimageTotheTop } from "./javascript_source/workJavascipt/filgrimage_pageTwoUpScroll.js";
+filgrimageTotheTop('wheel',filgrimage_pageOne);
+
+
 
 
