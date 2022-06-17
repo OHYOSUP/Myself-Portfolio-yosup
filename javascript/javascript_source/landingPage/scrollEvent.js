@@ -3,7 +3,7 @@ const landingPage = document.getElementById('landing')
 const backdropBox = document.getElementById('backdropBox');
 const textBox = document.getElementById('textbox');
 const backgroundCity = document.querySelector('.img');
-
+// const main = document.getElementById('main');
 
 
 // console.log(footer);

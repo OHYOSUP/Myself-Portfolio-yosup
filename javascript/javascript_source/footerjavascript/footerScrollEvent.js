@@ -1,8 +1,9 @@
-const footer =document.getElementById('footer');
+
+const work =document.getElementById('work');
 
 const title = document .getElementById('title');
 
-export const mainTotheBottom = function downscroll(eventType,elems){
+export const footerTotheBottom = function downscroll(eventType,elems){
   main.addEventListener(eventType, (e)=>{
     e.preventDefault();
   if(e.deltaY > 0){

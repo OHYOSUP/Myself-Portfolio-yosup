@@ -1,3 +1,4 @@
+
 import { lightEffect } from "./javascript_source/landingPage/nightPinLight.js";
 import { colorChange } from "./javascript_source/landingPage/nightPinLight.js";
 const pinLight = document.getElementById('box');
@@ -24,8 +25,12 @@ totheUp('wheel', main, landing);
 // main페이지 업스크롤 이벤트
 
 import { mainTotheBottom } from "./javascript_source/mainJavascript/mainPageScroll.js";
-const footer = document.getElementById('footer');
+// const footer = document.getElementById('footer');
 mainTotheBottom('wheel',footer)
+
+import { footerTotheBottom } from "./javascript_source/footerjavascript/footerScrollEvent.js";
+footerTotheBottom('wheel', filgrimage_pageOne)
+
 
 
 import {lightItUp, lightItUp_bottom} from './javascript_source/mainJavascript/mainpage-lightGlow.js'
@@ -33,11 +38,14 @@ import {lightItUp, lightItUp_bottom} from './javascript_source/mainJavascript/ma
 lightItUp();
 setTimeout(lightItUp_bottom,300);
 
+import { fade } from "./javascript_source/workJavascipt/filgrimage_pageOneText-anim.js";
+
 
 import { navEvent, navEventSecond} from "./javascript_source/workJavascipt/filgrimage_pageTwotest-navigation.js";
 navEvent('mouseover')
 navEventSecond('mouseout')
 
-
+import { filgrimage_pageOneTotheBottom } from "./javascript_source/workJavascipt/filgrimagePageOne-downScroll.js";
+filgrimage_pageOneTotheBottom('wheel', filgrimage_pageTwo)
 
 
