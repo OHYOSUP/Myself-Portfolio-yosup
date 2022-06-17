@@ -17,15 +17,7 @@ console.log(titleText);
 
 titleText.textContent = "";
 const splitText = strText.split("");
-<<<<<<< HEAD
-
-
-
-
-console.log(splitText);
-=======
 // console.log(splitText);
->>>>>>> mainpage-lightGlow
 
 
 for(let i = 0; i<splitText.length; i++){
