@@ -1,3 +1,4 @@
+
 import { lightEffect } from "./javascript_source/landingPage/nightPinLight.js";
 import { colorChange } from "./javascript_source/landingPage/nightPinLight.js";
 const pinLight = document.getElementById('box');
@@ -37,6 +38,7 @@ setTimeout(lightItUp_bottom,300);
 import { navEvent, navEventSecond} from "./javascript_source/workJavascipt/filgrimage_pageTwotest-navigation.js";
 navEvent('mouseover')
 navEventSecond('mouseout')
+
 
 
 

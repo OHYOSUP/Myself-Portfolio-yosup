@@ -31,7 +31,7 @@ let timer = setInterval(fade,50)
 
 
 
-function fade(){
+export const textAni = function fade(){
   const span = titleText.querySelectorAll('span')[char];
   span.classList.add('fade');
   char++
