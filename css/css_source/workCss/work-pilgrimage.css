@@ -44,16 +44,11 @@
   width: 100vw;
   height: 100vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
 }
 #filgrimage_pageOne > div:nth-child(1) > img {
   width: 16.6vw;
   height: 100vh;
-<<<<<<< HEAD
-=======
   background-size: cover;
->>>>>>> mainpage-lightGlow
 }
 #filgrimage_pageOne span {
   opacity: 0;
