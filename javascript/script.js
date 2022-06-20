@@ -69,5 +69,6 @@ import { filgrimageTotheTop } from "./javascript_source/workJavascipt/filgrimage
 filgrimageTotheTop('wheel',filgrimage_pageOne);
 
 
+import { prevBtn, nextBtn } from "./javascript_source/hanbok_legacy/hanbok_legacy.js";
 
 

@@ -6,12 +6,7 @@ const downStair = Array.from(lightGroup_bottom);
 
 
 
-
 let i = -1;
-
-
-
-
 
 export const lightItUp = main.onload = function glowing (){
   let timer = setInterval(glowing,100);
