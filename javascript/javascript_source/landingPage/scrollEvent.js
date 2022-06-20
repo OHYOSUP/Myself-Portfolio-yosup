@@ -3,34 +3,45 @@ const landingPage = document.getElementById('landing')
 const backdropBox = document.getElementById('backdropBox');
 const textBox = document.getElementById('textbox');
 const backgroundCity = document.querySelector('.img');
-// const main = document.getElementById('main');
+const main = document.getElementById('main');
 
-
-// console.log(footer);
 
 
 backgroundCity.style.width = '150vw';
 backgroundCity.style.height = '150vh';
 backgroundCity.style.position = 'absolute'
-
-
 backdropBox.style.position = 'absolute';
 
 // console.log(backdropBox);
 
 
 let i = 0;
+let isStatus = true;
 
-function totheLeft (){
+// function gotodown (){
+//   main.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
+// }
+
+
+
+
+export const totheLeft = function backgoundAnimation(){
+// let isStatus = true;
+  requestAnimationFrame(backgoundAnimation);
+if(i < 400 && isStatus === true)
 i++;
-  requestAnimationFrame(totheLeft);
   backgroundCity.style.transform = `translateX(${-i}px)`;
-  if(i >= 689){
+  // console.log(i);
+  if(i === 400){
+    isStatus = false;
+    // cancelAnimationFrame(backgoundAnimation);
     backgroundCity.style.opacity = 0;
     backgroundCity.style.transition = '1s';
+    // main.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
+    
   }
 }
-export const scrollEvent = totheLeft();
+
 
 // 백그라운드 슬라이드
 

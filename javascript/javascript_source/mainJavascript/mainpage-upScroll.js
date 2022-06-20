@@ -9,7 +9,7 @@ export const totheUp = function downscroll(eventType,currentElem,targetElem){
   });
 } 
 
-const footer =document.getElementById('footer');
+// const footer =document.getElementById('footer');
 
 const title = document .getElementById('title');
 

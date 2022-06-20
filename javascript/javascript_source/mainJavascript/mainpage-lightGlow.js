@@ -22,33 +22,28 @@ export const lightItUp = main.onload = function glowing (){
   i++;
   if(i < upStair.length){
   upStair[i].classList.add('test');
-  console.log(i);
+  // console.log(i);
   if(i >= upStair.length){
     clearInterval(timer);
   }
   }
 }
 
-
 let d = -1;
-
-console.log(window.pageYOffset);
-let currnetYpos = window.pageYOffset;
 
 export const lightItUp_bottom = main.onload = function glowing_bottom (){
     let timer = setInterval(glowing_bottom,100);
     d++;
-
-
     if(d < downStair.length){
     downStair[d].classList.add('test');
-    console.log(d);
+    // console.log(d);
     if(d >= downStair.length){
       clearInterval(timer);
     }
-    
     }
   }
+
+
 
     
       

@@ -17,28 +17,38 @@ addElem('scroll', main);
 
 
 
-import { scrollEvent, totheBottom } from "./javascript_source/landingPage/scrollEvent.js";
+import { totheLeft, totheBottom } from "./javascript_source/landingPage/scrollEvent.js";
+const landingPage = document.getElementById('landing')
+
+landingPage.addEventListener('onload', totheLeft());
 totheBottom('wheel', main);
 // landing페이지 백그라운드 슬라이드, 다운스크롤이벤트
 
 
 import { totheUp, mainTotheBottom } from "./javascript_source/mainJavascript/mainpage-upScroll.js";
+
 totheUp('wheel', main, landing);
-mainTotheBottom('wheel',footer)
+mainTotheBottom('wheel',work)
 // main페이지 스크롤 이벤트
 import {lightItUp, lightItUp_bottom} from './javascript_source/mainJavascript/mainpage-lightGlow.js'
-lightItUp();
-setTimeout(lightItUp_bottom,300);
+const lightGroup = document.getElementById('lightGroup');
+
+lightGroup.onload = setTimeout(lightItUp_bottom,300);
+
+  
+
+
+
 // main페이지 조명 애니메이션
 
 
-import { footerTotheBottom, footerTotheTop } from "./javascript_source/footerjavascript/footerScrollEvent.js";
-footerTotheTop('wheel', main)
-footerTotheBottom('wheel', work)
+// import { footerTotheBottom, footerTotheTop } from "./javascript_source/footerjavascript/footerScrollEvent.js";
+// footerTotheTop('wheel', main)
+// footerTotheBottom('wheel', work)
 // footer 스크롤 이벤트
 
 import { workUpScroll, workDownScroll } from "./javascript_source/workJavascipt/workMainpage-ScrollEvent.js";
-workUpScroll('wheel', footer);
+workUpScroll('wheel', main);
 workDownScroll('wheel', filgrimage_pageOne);
 // workMain페이지 스크롤이벤트
 import { fade } from "./javascript_source/workJavascipt/filgrimage_pageOneText-anim.js";
