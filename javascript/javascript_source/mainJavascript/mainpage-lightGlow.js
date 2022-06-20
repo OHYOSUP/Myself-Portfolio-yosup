@@ -14,10 +14,7 @@ const downStair = Array.from(lightGroup_bottom);
 let i = -1;
 
 
-
-// export const lightItUp = main.onload = 
-
-export const lightItUp = main.onload = function glowing (){
+export const lightItUp = function glowing (){
   let timer = setInterval(glowing,100);
   i++;
   if(i < upStair.length){
@@ -31,7 +28,7 @@ export const lightItUp = main.onload = function glowing (){
 
 let d = -1;
 
-export const lightItUp_bottom = main.onload = function glowing_bottom (){
+export const lightItUp_bottom = function glowing_bottom (){
     let timer = setInterval(glowing_bottom,100);
     d++;
     if(d < downStair.length){
