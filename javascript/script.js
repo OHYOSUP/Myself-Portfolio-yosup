@@ -32,7 +32,7 @@ mainTotheBottom('wheel',work)
 // main페이지 스크롤 이벤트
 import {lightItUp, lightItUp_bottom} from './javascript_source/mainJavascript/mainpage-lightGlow.js'
 const lightGroup = document.getElementById('lightGroup');
-
+lightItUp();
 lightGroup.onload = setTimeout(lightItUp_bottom,300);
 
   
